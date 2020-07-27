@@ -2556,14 +2556,31 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1em 0;
 			width: 100%;
 		}
 
 			.image.fit img {
 				width: 100%;
 			}
+		
+		.image.fit2 {
+			display: block;
+			margin: 10px auto 20px;
+			width: 80%;
+		}
 
+			.image.fit2 img {
+				width: 100%;
+			}
+
+			figcaption {
+				/* background-color: #222; */
+				/* color: #fff; */
+				font: italic smaller sans-serif;
+				padding: 0px;
+				text-align: center;
+			}
 /* List */
 
 	ol {
