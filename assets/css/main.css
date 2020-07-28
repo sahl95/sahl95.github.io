@@ -221,7 +221,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: #cde44c !important;
 			border-bottom-color: transparent;
 		}
 
@@ -3550,6 +3550,7 @@ input, select, textarea {
 						#header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
 							margin-right: 0.5em;
 						}
+
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
 						color: #e44c65;
