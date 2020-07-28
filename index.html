@@ -61,7 +61,8 @@
 						<h2>About Me</h2>
 					</header>
 					<!-- <div class="content"> -->
-					<h4 style="text-align:left">I am a PhD student in the Astronomy and Astrophysics group at the University of Warwick under
+					<h4 style="text-align:left">I am a PhD student in the Astronomy and Astrophysics group at the
+						University of Warwick under
 						the supervision of Dr. Farzana Meru.
 						My research explores the evolution of planets around self-gravitating protoplanetary discs. I
 						perform 3D SPH simulations
@@ -88,90 +89,98 @@
 				<div class="container">
 					<header class="major">
 						<h2>Photography</h2>
-						<p>In my spare time, often after a conference in an exotic location, I enjoy travelling and photography of wildlife and landscapes. A small collection of my photos is shown below.</p>
+						<p>In my spare time, often after a conference in an exotic location, I enjoy travelling and
+							photography of wildlife and landscapes. A small collection of my photos is shown below.</p>
 					</header>
 					<!-- <div class="content"> -->
 					<div class="slideshow-container">
 
 						<div class="mySlides fade">
-						  <div class="numbertext">1 / 6</div>
-						  <img src="images/IMG_9892.jpeg" style="width:100%">
-						  <!-- <div class="text">Caption Text</div> -->
+							<div class="numbertext">1 / 6</div>
+							<img src="images/IMG_9892.jpeg" style="width:100%">
+							<!-- <div class="text">Caption Text</div> -->
 						</div>
-						
+
 						<div class="mySlides fade">
-						  <div class="numbertext">2 / 6</div>
-						  <img src="images/IMG_12690HDRv2_IMG_12693HDRv2.jpeg" style="width:100%">
-						  <!-- <div class="text">Caption Two</div> -->
+							<div class="numbertext">2 / 6</div>
+							<img src="images/IMG_12690HDRv2_IMG_12693HDRv2.jpeg" style="width:100%">
+							<!-- <div class="text">Caption Two</div> -->
 						</div>
-						
+
 						<div class="mySlides fade">
-						  <div class="numbertext">3 / 6</div>
-						  <img src="images/IMG_5160_3.jpeg" style="width:100%">
-						  <!-- <div class="text">Caption Three</div> -->
+							<div class="numbertext">3 / 6</div>
+							<img src="images/IMG_5160_3.jpeg" style="width:100%">
+							<!-- <div class="text">Caption Three</div> -->
 						</div>
 
 						<div class="mySlides fade">
 							<div class="numbertext">4 / 6</div>
 							<img src="images/IMG_3408.jpeg" style="width:100%">
 							<!-- <div class="text">Caption Text</div> -->
-						  </div>
-						  
-						  <div class="mySlides fade">
+						</div>
+
+						<div class="mySlides fade">
 							<div class="numbertext">5 / 6</div>
 							<img src="images/IMG_8280 (2).jpeg" style="width:100%">
 							<!-- <div class="text">Caption Two</div> -->
-						  </div>
-						  
-						  <div class="mySlides fade">
+						</div>
+
+						<div class="mySlides fade">
 							<div class="numbertext">6 / 6</div>
 							<img src="images/IMG_5345_EDIT.jpeg" style="width:100%">
 							<!-- <div class="text">Caption Three</div> -->
-						  </div>
-						
+						</div>
+
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-						
-						</div>
-						<br>
-						
-						<div style="text-align:center">
-						  <span class="dot" onclick="currentSlide(1)"></span> 
-						  <span class="dot" onclick="currentSlide(2)"></span> 
-						  <span class="dot" onclick="currentSlide(3)"></span>
-						  <span class="dot" onclick="currentSlide(4)"></span> 
-						  <span class="dot" onclick="currentSlide(5)"></span> 
-						  <span class="dot" onclick="currentSlide(6)"></span> 
-						</div>
-						
-						<script>
+
+					</div>
+					<br>
+
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+						<span class="dot" onclick="currentSlide(6)"></span>
+					</div>
+
+					<script>
+
 						var slideIndex = 1;
+						var timer = null;
 						showSlides(slideIndex);
-						
+
 						function plusSlides(n) {
-						  showSlides(slideIndex += n);
+							clearTimeout(timer);
+							showSlides(slideIndex += n);
 						}
-						
+
 						function currentSlide(n) {
-						  showSlides(slideIndex = n);
+							clearTimeout(timer);
+							showSlides(slideIndex = n);
 						}
-						
+
 						function showSlides(n) {
-						  var i;
-						  var slides = document.getElementsByClassName("mySlides");
-						  var dots = document.getElementsByClassName("dot");
-						  if (n > slides.length) {slideIndex = 1}    
-						  if (n < 1) {slideIndex = slides.length}
-						  for (i = 0; i < slides.length; i++) {
-							  slides[i].style.display = "none";  
-						  }
-						  for (i = 0; i < dots.length; i++) {
-							  dots[i].className = dots[i].className.replace(" activedot", "");
-						  }
-						  slides[slideIndex-1].style.display = "block";  
-						  dots[slideIndex-1].className += " activedot";
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							if (n == undefined) { n = ++slideIndex }
+							if (n > slides.length) { slideIndex = 1 }
+							if (n < 1) { slideIndex = slides.length }
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" activedot", "");
+							}
+							slides[slideIndex - 1].style.display = "block";
+							dots[slideIndex - 1].className += " activedot";
+							timer = setTimeout(showSlides, 10000);
 						}
-						</script>
+
+					</script>
 
 					<footer class="major">
 						<ul class="actions special">
