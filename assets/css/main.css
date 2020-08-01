@@ -7,6 +7,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.posterimage {
+
+	border-radius: 4px;  /* Rounded border */
+	padding: 1px; /* Some padding */
+	width: 50%; /* Set a small width */
+	box-shadow: 0 0 1px 1px #5480f1;
+  }
+  
+  /* Add a hover effect (yellow shadow) */
+  .posterimage:hover {
+	box-shadow: 0 0 10px 1px #e6da38;
+  }
+
 .mySlides {display: none}
 img {vertical-align: middle;}
 
