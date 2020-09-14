@@ -241,11 +241,15 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
 	right: 0;
-	border-radius: 3px 0 0 3px;
+	/* border-radius: 3px 0 0 3px; */
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 }
 .prev {
 	left: 0;
-	border-radius: 3px 0 0 3px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	/* border-radius: 3px 0 0 3px; */
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -271,6 +275,8 @@ img {vertical-align: middle;}
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+	background-color: rgba(10, 12, 26, 0.7);
+	border-bottom-right-radius: 10px
 }
 
 /* The dots/bullets/indicators */
