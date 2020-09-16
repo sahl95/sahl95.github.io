@@ -224,8 +224,8 @@ height: auto;}
 
 .img__wrap {
 	position: relative;
-	height: 100%;
-	width: auto;
+	width: 100%;
+	height: auto;
   }
   
   .img__description {
