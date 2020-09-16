@@ -222,6 +222,33 @@ height: auto;}
 	margin: auto;
 }
 
+.img__wrap {
+	position: relative;
+	height: 100%;
+	width: auto;
+  }
+  
+  .img__description {
+	position: absolute;
+	top: 0;
+	/* bottom: 0; */
+	left: 0;
+	right: 0;
+	background: rgba(10, 12, 26, 0.7);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	padding: 8px 12px;
+  
+	/* transition effect. not necessary */
+	transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description {
+	visibility: visible;
+	opacity: 1;
+  }
+
 /* Next & previous buttons */
 .prev, .next {
 	cursor: pointer;
