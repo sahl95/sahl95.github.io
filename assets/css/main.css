@@ -272,13 +272,13 @@ height: auto;}
 .next {
 	right: 0;
 	/* border-radius: 3px 0 0 3px; */
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
+	border-bottom-left-radius: 50%;
+	border-top-left-radius: 50%;
 }
 .prev {
 	left: 0;
-	border-bottom-right-radius: 10px;
-	border-top-right-radius: 10px;
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 50%;
 	/* border-radius: 3px 0 0 3px; */
 }
 
@@ -306,7 +306,7 @@ height: auto;}
 	position: absolute;
 	top: 0;
 	background-color: rgba(10, 12, 26, 0.7);
-	border-bottom-right-radius: 10px
+	border-bottom-right-radius: 50%
 }
 
 /* The dots/bullets/indicators */
