@@ -161,7 +161,7 @@
 }
 
 .zoom {
-	transition: transform .2s; /* Animation */
+	transition: transform 0.5s; /* Animation */
   }
   
   .zoom:hover {
