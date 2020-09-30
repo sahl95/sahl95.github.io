@@ -108,6 +108,8 @@
 							<p class="img__description">Sumatran Tiger, Taronga Zoo Sydney</p>
 							<div class="numbertext">1 / 8</div>
 							<img loading="lazy" src="images/IMG_9889.jpeg" width=1280 height="915" style="border-radius: 2%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- <div class="text">Caption Text</div> -->
 						</div>
 
@@ -121,12 +123,16 @@
 							<p class="img__description">Milky Way, Aberdeen</p>
 							<div class="numbertext">2 / 8</div>
 							<img loading="lazy" src="images/MilkyWayPortrait-5.jpeg" width=654 height="915" style="border-radius: 2%; width: 100%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 
 						<div class="mySlides fade img__wrap">
 							<p class="img__description">Red Panda and a Leaf, Melbourne Zoo</p>
 							<div class="numbertext">3 / 8</div>
 							<img loading="lazy" src="images/IMG_5160_3.jpeg" width=1280 height="915" style="border-radius: 2%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- <div class="text">Caption Three</div> -->
 						</div>
 
@@ -134,6 +140,8 @@
 							<p class="img__description">Puffins, Isle of May</p>
 							<div class="numbertext">4 / 8</div>
 							<img loading="lazy" src="images/IMG_3408.jpeg" width=1280 height="915" style="border-radius: 2%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- <div class="text">Caption Text</div> -->
 						</div>
 
@@ -141,6 +149,8 @@
 							<p class="img__description">Eastern Rosella, Birdworld Kuranda</p>
 							<div class="numbertext">5 / 8</div>
 							<img loading="lazy" src="images/IMG_8280 (2).jpeg" width=1280 height="915" style="border-radius: 2%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- <div class="text">Caption Two</div> -->
 						</div>
 
@@ -154,12 +164,16 @@
 							<p class="img__description">Koala Sleeping in the Rain, Healesville Sanctuary</p>
 							<div class="numbertext">6 / 8</div>
 							<img loading="lazy" src="images/IMG_5357-3.jpeg" width=1280 height="915" style="border-radius: 2%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 
 						<div class="mySlides fade img__wrap" style="width: 71.45%;">
 							<p class="img__description">Moon</p>
 							<div class="numbertext">7 / 8</div>
 							<img loading="lazy" src="images/Moon-2-3.jpeg" width=915 height="915" style="border-radius: 2%; width: 100%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- <div class="text">Caption Two</div> -->
 						</div>
 
@@ -167,11 +181,13 @@
 							<p class="img__description">Glencoe Lochan</p>
 							<div class="numbertext">8 / 8</div>
 							<img loading="lazy" src="images/IMG_12690HDRv2_IMG_12693HDRv2.jpeg" width=1280 height="580" style="border-radius: 2%;">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 							<!-- <div class="text">Caption Two</div> -->
 						</div>
 
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
 					</div>
 					<br>
@@ -219,6 +235,22 @@
 							slides[slideIndex - 1].style.display = "block";
 							dots[slideIndex - 1].className += " activedot";
 							timer = setTimeout(showSlides, 10000);
+						}
+						document.onkeydown = function(e) {
+							switch (e.keyCode) {
+								case 37:
+									//left
+									e.preventDefault();
+									slideIndex--;
+									currentSlide(slideIndex);
+									break;
+								case 39:
+									//right
+									e.preventDefault();
+									slideIndex++;
+									currentSlide(slideIndex);
+									break;
+							}
 						}
 
 					</script>
