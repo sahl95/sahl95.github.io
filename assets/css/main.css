@@ -7,6 +7,36 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.glow{
+	/* font-family: 'Montserrat', Arial, sans-serif; */
+    /* font-size: 2em; */
+	/* font-weight: 700; */
+	/* font-family: "Yellowtail"; */
+    color: #fff;
+    /* letter-spacing: 0.02em; */
+    /* text-transform: uppercase; */
+	text-shadow:  0 0 .09em #07329e, 0 0 .11em #07329e, 0 0 .13em #07329e, 0 0 .15em #07329e, 0 0 .17em #07329e;
+}
+
+.glow a:hover{
+	text-shadow: 0 0 .09em #9e8707, 0 0 .11em #9e8707, 0 0 .13em #9e8707, 0 0 .15em #9e8707, 0 0 .17em #9e8707;
+}
+
+.glowalt{
+	/* font-family: 'Montserrat', Arial, sans-serif; */
+    /* font-size: 2em; */
+	/* font-weight: 700; */
+	/* font-family: "Yellowtail"; */
+    /* color: #fff; */
+    /* letter-spacing: 0.02em; */
+    /* text-transform: uppercase; */
+	text-shadow:  0 0 .05em #fff;
+}
+
+.glowalt a:hover{
+	text-shadow: 0 0 .09em #9e8707, 0 0 .11em #9e8707, 0 0 .13em #9e8707, 0 0 .15em #9e8707, 0 0 .17em #9e8707;
+}
+
 .hero{
 	display: flex;
 	justify-content: center;
@@ -461,6 +491,7 @@ input, select, textarea {
 		a:hover {
 			color: #FFE55E !important;
 			border-bottom-color: transparent;
+			/* text-shadow: 0 0 .5em #fff, 0 0 .10em #fff, 0 0 .15em orange, 0 0 .20em orange, 0 0 .25em orange, 0 0 .30em orange, 0 0 .35em orange; */
 		}
 
 	strong, b {
