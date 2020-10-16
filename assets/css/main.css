@@ -4209,7 +4209,6 @@ input, select, textarea {
 			header p br {
 				display: none;
 			}
-
 			header h2 + p {
 				font-size: 1em;
 			}
