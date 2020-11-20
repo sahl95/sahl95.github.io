@@ -7,6 +7,55 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.texthover a img {
+    display: inline;
+    position: absolute;
+	transform: translate(0%, -102%);
+	/* height: 10em; */
+	width: 0;
+	max-width: 40vw;
+	max-height: 50vh;
+	overflow: scroll;
+	opacity: 0;
+    transition: 800ms all;
+}
+.texthover a {
+    display: inline-block;
+    position: relative;
+}
+
+.texthover a:hover img {
+	display: inherit;
+	width: auto;
+	opacity: 1;
+}
+.texthover a:focus img {
+	display: inherit;
+	width: auto;
+	opacity: 1;
+}
+
+.texthover a video {
+    display: none;
+    position: absolute;
+	transform: translate(0%, -105%);
+	/* height: 10em; */
+	max-width: 30em;
+	max-height: 15em;
+	width: auto;
+	overflow: visible;
+}
+.texthover a {
+    display: inline-block;
+    position: relative;
+}
+.texthover a video {
+    display: none;
+}
+.texthover a:hover video {
+    display: inherit;
+}
+
 .glow{
 	/* font-family: 'Montserrat', Arial, sans-serif; */
     /* font-size: 2em; */
