@@ -77,6 +77,36 @@
                                         <li><a href="https://academic.oup.com/mnras/article/496/2/1598/5854577"
                                                 target='_blank' style="width: 12em;" class="linkwobble wobble-vertical-on-hover button primary"><i class="fas fa-file-pdf fa-lg"></i><span style="margin-left:0.75em"></span>Article PDF</a></li>
                                     </ul>
+                                    <ul class="actions">
+                                        <li>
+                                            <button id="myBtn" class="button" style="width: 7em; font-size: 1rem;">Cite</button>
+
+                                            <!-- The Modal -->
+                                            <div id="myModal" class="modal">
+                                            
+                                            <!-- Modal content -->
+                                                <div class="modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <p id='bib'>@article{10.1093/mnras/staa1590,<br>
+                                                        author = {Rowther, Sahl and Meru, Farzana},<br>
+                                                        title = "{Planet migration in self-gravitating discs: survival of planets}",<br>
+                                                        journal = {Monthly Notices of the Royal Astronomical Society},<br>
+                                                        volume = {496},<br>
+                                                        number = {2},<br>
+                                                        pages = {1598-1609},<br>
+                                                        year = {2020},<br>
+                                                        month = {06},<br>
+                                                        abstract = "{We carry out three-dimensional smoothed particle hydrodynamics simulations to study whether planets can survive in self-gravitating protoplanetary discs. The discs modelled here use a cooling prescription that mimics a real disc, which is only gravitationally unstable in the outer regions. We do this by modelling the cooling using a simplified method such that the cooling time in the outer parts of the disc is shorter than in the inner regions, as expected in real discs. We find that both giant (\\&gt;MSat) and low-mass (\\&lt;MNep) planets initially migrate inwards very rapidly, but are able to slow down in the inner gravitationally stable regions of the disc without needing to open up a gap. This is in contrast to previous studies where the cooling was modelled in a more simplified manner where, regardless of mass, the planets were unable to slow down their inward migration. This shows the important effect the thermodynamics has on planet migration. In a broader context, these results show that planets that form in the early stages of the discs’ evolution, when they are still quite massive and self-gravitating, can survive.}",<br>
+                                                        issn = {0035-8711},<br>
+                                                        doi = {10.1093/mnras/staa1590},<br>
+                                                        url = {https://doi.org/10.1093/mnras/staa1590},<br>
+                                                        eprint = {https://academic.oup.com/mnras/article-pdf/496/2/1598/33483443/staa1590.pdf},<br>
+                                                    }</p>
+                                                    <p style="text-align: center;"><button onclick="copyToClipboard('#bib')" class='button'>Export Citation (BibTeX)</button></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </footer>
                             </section>
                             <hr>
@@ -231,6 +261,45 @@
     </div>
 
     <!-- Scripts -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<textarea>");
+            $("body").append($temp);
+            var html = $(element).html();
+            html = html.replace(/<br>/g, ""); // or \r\n
+            console.log(html);
+            $temp.val(html).select();
+            document.execCommand("copy");
+            $temp.remove();
+            }
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
