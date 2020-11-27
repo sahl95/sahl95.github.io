@@ -3404,6 +3404,12 @@ input, select, textarea {
 			.button.primary:hover {
 				background-color: #6a8fee;
 			}
+			.button.secondary:hover {
+				background-color: #8a66eb;
+			}
+			.button.tertiary:hover {
+				background-color: #ffffff;
+			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
