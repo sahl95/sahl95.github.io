@@ -74,7 +74,7 @@
                                                 <div class="modal-content">
                                                     <span class="close">&times;</span>
                                                     <p id='bib'>@article{Rowther_2020,<br>doi = {10.3847/2041-8213/abc704},<br>url = {https://doi.org/10.3847%2F2041-8213%2Fabc704},<br>year = 2020,<br>month = {nov},<br>publisher = {American Astronomical Society},<br>volume = {904},<br>number = {2},<br>pages = {L18},<br>author = {Sahl Rowther and Farzana Meru and Grant M. Kennedy and Rebecca Nealon and Christophe Pinte},<br>title = {Hiding Signatures of Gravitational Instability in Protoplanetary Disks with Planets},<br>journal = {The Astrophysical Journal},<br>abstract = {We carry out three-dimensional smoothed particle hydrodynamics simulations to show that a migrating giant planet strongly suppresses the spiral structure in self-gravitating disks. We present mock Atacama Large Millimeter/submillimeter Array (ALMA) continuum observations that show that in the absence of a planet, spiral arms due to gravitational instability are easily observed. Whereas in the presence of a giant planet, the spiral structures are suppressed by the migrating planet resulting in a largely axisymmetric disk with a ring and gap structure. Our modeling of the gas kinematics shows that the planet’s presence could be inferred, for example, using optically thin 13C16O. Our results show that it is not necessary to limit the gas mass of disks by assuming high dust-to-gas mass ratios in order to explain a lack of spiral features that would otherwise be expected in high-mass disks.}<br>}</p>
-                                                    <p style="text-align: center;"><button onclick="copyToClipboard('#bib')" id="CopyClipboard" class='button'>Copy Citation to Clipboard (BibTeX)</button></p>
+                                                    <p style="text-align: center;"><button onclick="copyToClipboard('#bib')" id="CopyClipboard" class='button' style="width:22em">Copy Citation to Clipboard (BibTeX)</button></p>
                                                 </div>
                                             </div>
                                         </li>
@@ -236,7 +236,14 @@
             document.execCommand("copy");
             $temp.remove();
 
-            $("#CopyClipboard").text('Citation Successfully Copied!');
+            CopyClipboardClick()
+            setTimeout(resetButton,3000);
+            }
+            function CopyClipboardClick(){ 
+                $("#CopyClipboard").text('Citation successfully copied!');
+            }
+            function resetButton(){ 
+                $("#CopyClipboard").text('Copy Citation to Clipboard (BibTeX)');
             }
     </script>
 
