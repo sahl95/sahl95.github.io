@@ -314,7 +314,7 @@
 	height: 100%;
 	border-radius: 4px;  /* Rounded border */
 	padding: 1px;
-	box-shadow: 0 0 1px 1px #5480f1;
+	box-shadow: 0 0 1px 1px white;
   }
   .videoWrapper iframe:hover {
 	box-shadow: 0 0 10px 1px #FFE55E;
