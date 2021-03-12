@@ -7,6 +7,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.MathJax {
+	font-size: 1em !important;
+	font-weight: normal !important;
+	color: inherit !important;
+}
+
 .modal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
