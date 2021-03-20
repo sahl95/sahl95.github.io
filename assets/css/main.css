@@ -13,6 +13,22 @@
 	color: inherit !important;
 }
 
+.headerTitle {
+	font-weight: 900;
+	font-size: 2.5em;
+	max-width: 80%;
+	margin: auto;
+	margin-bottom: 1em;
+	
+}
+
+@media only screen and (max-width: 700px) {
+	.headerTitle {
+		max-width: 95%;
+		font-size: 2em;
+	}
+}
+
 .modal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
