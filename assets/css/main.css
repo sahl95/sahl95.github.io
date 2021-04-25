@@ -572,7 +572,8 @@ input, select, textarea {
 	html, body {
 		/* background: #1c1d26; */
 		/* background: rgba(27, 29, 48, 0.965); navy blue */
-		background: rgba(10, 12, 26, 0.965);
+		/* background: rgba(10, 12, 26, 0.965); */
+		background: #0B0D19;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
