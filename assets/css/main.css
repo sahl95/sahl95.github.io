@@ -18,13 +18,13 @@
 	font-family: 'myFont';
 	font-style: normal;
 	font-weight: 400;
-	src: url('Fonts/bangers-v13-latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('../../Fonts/bangers-v13-latin-regular.eot'); /* IE9 Compat Modes */
 	src: local(''),
-		 url('Fonts/bangers-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('Fonts/bangers-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('Fonts/bangers-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
-		 url('Fonts/bangers-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('Fonts/bangers-v13-latin-regular.svg#Bangers') format('svg'); /* Legacy iOS */
+		 url('../../Fonts/bangers-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../../Fonts/bangers-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../../Fonts/bangers-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../../Fonts/bangers-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../../Fonts/bangers-v13-latin-regular.svg#Bangers') format('svg'); /* Legacy iOS */
   }
 
 .headerTitle {
@@ -32,8 +32,8 @@
 	max-width: 80%;
 	margin: auto;
 	margin-bottom: 1em;
-	font-family: 'myFont', 'Bangers', 'Roboto', Helvetica, sans-serif;
-	/* font-family: 'myFont'; */
+	/* font-family: 'myFont', 'Bangers', 'Roboto', Helvetica, sans-serif; */
+	font-family: 'myFont';
 	letter-spacing: 0.075em;
 	font-variant: small-caps;
 	
