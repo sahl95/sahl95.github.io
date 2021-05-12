@@ -15,11 +15,21 @@
 
 .headerTitle {
 	font-weight: 900;
-	font-size: 2.5em;
+	font-size: 3em;
 	max-width: 80%;
 	margin: auto;
 	margin-bottom: 1em;
+	font-family: 'Bangers';
+	letter-spacing: 0.075em;
+	font-variant: small-caps;
 	
+}
+
+@media only screen and (max-width: 800px) {
+	.headerTitle {
+		max-width: 92%;
+		font-size: 2.5em;
+	}
 }
 
 @media only screen and (max-width: 700px) {
