@@ -19,7 +19,7 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url('../../Fonts/bangers-v13-latin-regular.eot'); /* IE9 Compat Modes */
-	src: local('myFont'),
+	src: local('Bangers'),
 		 url('../../Fonts/bangers-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 		 url('../../Fonts/bangers-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
 		 url('../../Fonts/bangers-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
