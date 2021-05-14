@@ -126,25 +126,30 @@
 	opacity: 1;
 }
 
-.texthover a video {
+.texthover p video {
     display: none;
     position: absolute;
-	transform: translate(0%, -105%);
-	/* height: 10em; */
-	max-width: 30em;
-	max-height: 15em;
-	width: auto;
-	overflow: visible;
+	transform: translate(0%, -102%);
+	width: 0;
+	max-width: 40vw;
+	max-height: 50vh;
+	overflow: scroll;
+	opacity: 0;
+    transition: 800ms all;
 }
-.texthover a {
+.texthover p {
     display: inline-block;
     position: relative;
 }
-.texthover a video {
-    display: none;
-}
-.texthover a:hover video {
+.texthover p video {
     display: inherit;
+	width: auto;
+	opacity: 1;
+}
+.texthover p:hover video {
+    display: inherit;
+	width: auto;
+	opacity: 1;
 }
 
 .glow{
