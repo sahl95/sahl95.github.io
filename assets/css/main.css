@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 800px) {
 	.summary {
-		max-width: 90%;
+		max-width: 100%;
 	}
 }
 
