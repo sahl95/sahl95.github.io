@@ -13,6 +13,16 @@
 	color: inherit !important;
 }
 
+.summary {
+	max-width: 75%;
+}
+
+@media only screen and (max-width: 800px) {
+	.summary {
+		max-width: 90%;
+	}
+}
+
 /* bangers-regular - latin */
 @font-face {
 	font-family: 'myFont';
