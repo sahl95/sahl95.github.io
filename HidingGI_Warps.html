@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Warping Away Gravitational Instabilities</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta
+      name="keywords"
+      content="Warps, Protoplanetary Discs, Gravitationally Unstable, Warped Protoplanetary Disc"
+    />
+    <meta name="author" content="Sahl Rowther" />
+    <meta name="theme-color" content="#1B1D30" />
+    <meta name="msapplication-navbutton-color" content="#1B1D30" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30" />
+    <link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css" />
+    <link rel="shortcut icon" type="image/png" href="sahl_logo.png" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo">
+          <a
+            href="index.html"
+            style="margin-right: 0.5cm"
+            class="linkwobble pulse"
+            ><i class="fa fa-home" aria-hidden="true"></i
+          ></a>
+          <a href="index.html">Sahl Rowther</a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="Posters.html">Posters & Talks</a></li>
+            <li>
+              <a href="ResearchInterests.html">Research</a>
+              <ul>
+                <li><a href="ResearchInterests.html">Overview</a></li>
+                <li>
+                  <a href="PlanetMigration.html"
+                    >Survival of Planets in Self-Gravitating Discs</a
+                  >
+                </li>
+                <li>
+                  <a href="HidingGravitationalInstability.html"
+                    >Hiding Gravitational Instability in Protoplanetary Discs</a
+                  >
+                </li>
+                <li>
+                  <a href="HidingGI_Warps.html"
+                    >Warping Away Gravitational Instabilities in Protoplanetary
+                    Discs</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <div id="main" class="wrapper style1">
+        <div class="container">
+          <header class="major">
+            <h2 class="headerTitle">
+              <a href="" target="_blank"></a>Warping Away Gravitational
+              Instabilities in Protoplanetary Discs
+            </h2>
+            <p>Sahl Rowther, Rebecca Nealon, Farzana Meru</p>
+          </header>
+          <p class="texthover" style="text-align: center">
+            <i class="fas fa-info-circle" style="margin-right: 1em"></i>Hover on
+            <a href=""
+              ><img src="images/HoverExample_small.png" alt="" /><font
+                color="#C2C2C5"
+              ></font
+              >blue text</a
+            >
+            for more information.
+          </p>
+          <br />
+          <div class="row gtr-150">
+            <div class="col-12 col-12-medium">
+              <!-- Sidebar -->
+              <section id="sidebar">
+                <section>
+                  <h3>Abstract</h3>
+                  <p>
+                    We perform 3D SPH simulations of warped, non-coplanar
+                    gravitationally unstable discs to show that as the warp
+                    propagates through the self-gravitating disc, it heats up
+                    the disc rendering it gravitationally stable. Thus losing
+                    their spiral structure and appearing completely
+                    axisymmetric. In their youth, protoplanetary discs are
+                    expected to be massive and self-gravitating, which results
+                    in non-axisymmetric spiral structures. However recent
+                    observations of young protoplanetary discs with ALMA have
+                    revealed that discs with large-scale spiral structure are
+                    rarely observed in the midplane. Instead, axisymmetric discs
+                    with some also having ring \& gap structures are more
+                    commonly observed. Our work invloving warps, non-coplanar
+                    disc structures that are expected to commonly occur in young
+                    discs, potentially resolves this discrepancy between
+                    observations and theoretical predictions. We demonstrate
+                    that they are able to suppress the large-scale spiral
+                    structure of self-gravitating protoplanetary discs.
+                  </p>
+                  <footer>
+                    <ul class="actions">
+                      <li>
+                        <a
+                          href=""
+                          target="_blank"
+                          style="width: 12em"
+                          class="
+                            button
+                            primary
+                            linkwobble
+                            wobble-vertical-on-hover
+                          "
+                          ><i class="fas fa-file-pdf fa-lg"></i
+                          ><span style="margin-left: 0.75em"></span>Article
+                          PDF</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          target="_blank"
+                          style="width: 12em"
+                          class="
+                            button
+                            secondary
+                            linkwobble
+                            wobble-vertical-on-hover
+                          "
+                          >Press Release</a
+                        >
+                      </li>
+                      <li>
+                        <button
+                          id="myBtn"
+                          class="
+                            button
+                            tertiary
+                            linkwobble
+                            wobble-vertical-on-hover
+                          "
+                          style="width: 12em; font-size: 1em"
+                        >
+                          Cite
+                        </button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p id="bib">
+                              @ARTICLE{2021arXiv211006227R, author = {{Rowther},
+                              Sahl and {Nealon}, Rebecca and {Meru},
+                              Farzana},<br />
+                              title = "{Warping Away Gravitational Instabilities
+                              in Protoplanetary Discs}",<br />
+                              journal = {arXiv e-prints},<br />
+                              keywords = {Astrophysics - Earth and Planetary
+                              Astrophysics},<br />
+                              year = 2021,<br />
+                              month = oct,<br />
+                              eid = {arXiv:2110.06227},<br />
+                              pages = {arXiv:2110.06227},<br />
+                              archivePrefix = {arXiv},<br />
+                              eprint = {2110.06227},<br />
+                              primaryClass = {astro-ph.EP},<br />
+                              adsurl =
+                              {https://ui.adsabs.harvard.edu/abs/2021arXiv211006227R},<br />
+                              adsnote = {Provided by the SAO/NASA Astrophysics
+                              Data System}<br />
+                              }
+                            </p>
+
+                            <p style="text-align: center">
+                              <button
+                                onclick="copyToClipboard('#bib')"
+                                id="CopyClipboard"
+                                class="button"
+                                style="width: 23em; max-width: 100%"
+                              >
+                                <i
+                                  class="fas fa-copy"
+                                  style="
+                                    margin-right: 1em;
+                                    font-size: 1.5em;
+                                    vertical-align: -0.15em;
+                                  "
+                                ></i
+                                >Copy Citation to Clipboard (BibTeX)
+                              </button>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </footer>
+                </section>
+                <!-- <hr> -->
+              </section>
+            </div>
+          </div>
+          <hr />
+          <div class="row gtr-150">
+            <div class="col-12 col-12-medium">
+              <!-- Sidebar -->
+              <section id="sidebar">
+                <section>
+                  <h3>Where are the Gravitationally Unstable Discs?</h3>
+                  <p class="texthover">
+                    When discs are young, they are expected to be quite massive.
+                    A characteristic feature of massive discs are large scale
+                    spiral features due to gravitational instabilities. However,
+                    observations of recent protoplanetary discs
+                    <a
+                      href="https://iopscience.iop.org/article/10.3847/2041-8213/aaf741"
+                      target="_blank"
+                      ><img
+                        src="images/HidingGravitationalInstability/Andrews2018.png"
+                        alt=""
+                      /><font color="#C2C2C5">(</font>Andrews et al. 2018</a
+                    >,
+                    <a
+                      href="https://iopscience.iop.org/article/10.3847/1538-4357/aae8e1"
+                      target="_blank"
+                      ><img
+                        src="images/HidingGravitationalInstability/Long2018.png"
+                        alt=""
+                      />Long et al. 2018<font color="#C2C2C5">)</font></a
+                    >
+                    in the last few years have shown that most discs tend to be
+                    axisymmetric, with some also showing ring and gap
+                    structures. Even observations of very young Class 1 discs
+                    such as GY 91
+                    <a
+                      href="https://iopscience.iop.org/article/10.3847/1538-4357/aaae65"
+                      target="_blank"
+                      ><img
+                        src="images/HidingGravitationalInstability/GY91.png"
+                        alt=""
+                      /><font color="#C2C2C5">(</font>Sheehan & Eisner 2018<font
+                        color="#C2C2C5"
+                        >)</font
+                      ></a
+                    >
+                    and IRS 63
+                    <a
+                      href="https://www.nature.com/articles/s41586-020-2779-6"
+                      target="_blank"
+                      ><img
+                        src="images/HidingGravitationalInstability/IRS63.png"
+                        alt=""
+                      /><font color="#C2C2C5">(</font>Segura-Cox et al.
+                      2020<font color="#C2C2C5">)</font></a
+                    >, both thought to be less than half a million years old,
+                    show rings & gaps. <br /><br />
+                    Does the lack of observed large scale spiral structures
+                    imply that young discs are not as massive as expected? Or
+                    can signatures of gravitational instabilities be hidden? It
+                    is reasonable to assume that gravitationally unstable discs
+                    do not evolve in isolation. There are many complex processes
+                    that can occur during the self-gravitating phase of the disc
+                    that can warp the disc and alter its evolution. These
+                    include a misaligned internal (planetary or stellar)
+                    companion, a misaligned unbound stellar companion (flyby),
+                    or misaligned infalling material from chaotic accretion
+                    episodes.
+                    <font color="white" style="font-weight: 500"
+                      >Our aim is to investigate whether physical processes such
+                      as warps can hide signatures of gravitational
+                      instability</font
+                    >.
+                  </p>
+                </section>
+                <!-- <hr> -->
+              </section>
+            </div>
+          </div>
+          <hr />
+          <div class="row gtr-150">
+            <div class="col-6 col-12-medium">
+              <h3>Evolution of a Warped Disc</h3>
+              <ul>
+                <li>
+                  The disc is first evolved without a warp until the disc is
+                  gravitationally stable and in a steady state. We then include
+                  an idealised warp to understand the impact of a warp on the
+                  disc's evolution.
+                </li>
+                <li>
+                  As the disc evolves, the warp propagates radially both inwards
+                  and outwards.
+                </li>
+                <li>
+                  Since the warp was introduced numerically, it is not
+                  sustained. Thus as the disc continues to evolve, the warp
+                  smooths out and the disc becomes coplanar.
+                </li>
+                <li>
+                  The influence of the warp quickly suppresses the spiral
+                  structures yielding an axisymmetric gravitationally stable
+                  disc.
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-12-medium">
+              <figure class="zoom">
+                <video
+                  width="70%"
+                  loop="true"
+                  autoplay="autoplay"
+                  muted
+                  style="
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                  "
+                >
+                  <source
+                    src="Videos/DAD2021/WarpedDisc_Pres_Rotation_trim.mp4"
+                  />
+                </video>
+                <figcaption
+                  style="
+                    text-align: left;
+                    width: max-content;
+                    margin: 1em auto;
+                    max-width: 70%;
+                  "
+                >
+                  Evolution of a warped self-gravitating protoplanetary disc.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <!-- <div class="col-4 col-12-medium imp-medium">
+                        <figure>
+                            <span class="image fit"><img src="images/HidingGI_Warps/Q_evol.png" style="width: 100%; display: block; margin-left: auto; margin-right: auto;" alt="" /></span>
+                            <figcaption style="text-align: left;"><b>Figure 2:</b> Azimuthally averaged Toomre parameter, Q (top), surface density, &Sigma; (middle), and the sound speed, c<sub>s</sub> (bottom) for both the disc without a planet (red lines) and with a 3 Jupiter mass planet (blue lines) for the first 2 orbits after the planet is added. The darker shades represent later times. The increase in c<sub>s</sub> due to the planet is the dominant reason for the increase in Q in the outer regions of the disc (beyond R &approx; 120AU), causing the disc to become gravitationally stable.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div> -->
+
+          <hr />
+
+          <div class="row gtr-150">
+            <div class="col-6 col-12-medium">
+              <h3>Why Does the Disc Become Gravitationally Stable?</h3>
+              <p>The Toomre Q parameter provides us a measure of how gravitationally unstable a disc is. It depends on two parameters, the surface density and sound speed of the disc. Or equivalently, the mass and temperature of the disc. The more massive or colder a disc is, the more gravitationally unstable it is.</p>
+              <h3>Impact of the Warp</h3>
+              <ul>
+                <li class="texthover">By comparing how the surface density (top), sound speed (middle), and Q (bottom) evolve in Figure 2, we can see why the disc becomes gravitationally stable after the warp has been introducd. </li>
+                <li>The surface density profile remains unchanged as the disc evolves.</li>
+                <li>However, the increase in sound speed as the disc evolves tells us that the disc has heated up.</li>
+                <li>Hence, the disc has been pushed into the gravitationally stable regime due to the disc becoming hotter as seen by the increase in Q.</li>
+              </ul>
+            </div>
+            <div class="col-6 col-12-medium">
+              <figure class="tallImage"> 
+                <span
+                  ><img 
+                    src="images/HidingGI_Warps/Q_evol.png"
+                    style="
+                      display: block;
+                      text-align: center;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                    alt=""
+                /></span>
+                <figcaption style="text-align: left">
+                  <b>Figure 2:</b> Azimuthally averaged surface density, &Sigma;
+                  (top), the sound speed, c<sub>s</sub> (middle), and the Toomre
+                  parameter, Q (top) in code units at 0.5, 1, 1.5, 2, and 4
+                  orbits after the warp has been introduced. The darker shades
+                  represent later times. The dashed white line in each panel is
+                  the initial profile at the moment the warp is introduced. The
+                  increase in c<sub>s</sub> due to the warp is the reason for
+                  the increase in Q causing the disc to become gravitationally
+                  stable.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3>Why Does the Disc Heat Up?</h3>
+          <div class="row gtr-150">
+            <div class="col-12 col-12-medium">
+              <p>
+                The PdV work plays an important role in altering the disc's
+                evolution. The divergence of the velocity is directly linked to
+                the PdV work, so we use it as a proxy for the PdV work.
+              </p>
+            </div>
+          </div>
+
+          <div class="row gtr-150">
+            <div class="col-6 col-12-medium">
+              <h3>The Impact on the Velocities</h3>
+              <ul>
+                <li class="texthover">
+                  In the warped region of the disc, adjacent annuli of gas are
+                  misaligned with varying vertical height \(z\). This results in
+                  an
+                  <a
+                    href="images/HidingGI_Warps/InitRwarp_withCaption.png"
+                    target="_blank"
+                    style="display: inline"
+                    ><img
+                      src="images/HidingGI_Warps/InitRwarp_withCaption.png"
+                      alt=""
+                    /><font color="#C2C2C5">(</font>oscillating radial pressure
+                    gradient<font color="#C2C2C5">)</font></a
+                  >
+                  as the gas traverses an orbit.
+                </li>
+                <li>
+                  This oscillating radial pressure gradient can trigger a strong
+                  response in the radial velocity of the disc (Lodato & Pringle
+                  2007), which heats up the disc. This is especially apparent in
+                  the early stages as seen by the large magnitudes of the
+                  velocity divergence.
+                </li>
+                <li>
+                  As the warp dissipates, there is little variance in the
+                  pressure gradient. Thus, the magnitude of velocity divergence
+                  has greatly decreased as expected leading to less heating from
+                  PdV work.
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-12-medium">
+              <figure class="zoom">
+                <video
+                  width="70%"
+                  loop="true"
+                  autoplay="autoplay"
+                  controls
+                  muted
+                  style="display: block; margin: 0 auto; border-radius: 3%"
+                >
+                  <source src="Videos/GI_Warps/WarpedDivV_v2.mp4" />
+                </video>
+                <figcaption
+                  style="
+                    text-align: left;
+                    width: max-content;
+                    margin: 1em auto;
+                    max-width: 70%;
+                  "
+                >
+                  The warp induces a strong response in the velocity flow of the
+                  disc, which heats it up.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons glowalt">
+          <li>
+            <a
+              href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/sahlrowther"
+              target="_blank"
+              class="linkwobble pulse icon far fa-address-card"
+              style="color: silver"
+              ><span class="label">Website</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:sahl.rowther@warwick.ac.uk"
+              class="linkwobble pulse icon solid fa-envelope"
+              style="color: silver"
+              ><span class="label">Email</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://500px.com/sahl_95"
+              target="_blank"
+              class="linkwobble pulse icon brands fa-500px"
+              style="color: silver"
+              ><span class="label">500px</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://arxiv.org/a/rowther_s_1.html"
+              target="_blank"
+              class="linkwobble pulse ai ai-arxiv ai-2x"
+              style="color: silver; vertical-align: -0.06em"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://orcid.org/0000-0003-4249-4478"
+              target="_blank"
+              class="linkwobble pulse ai ai-orcid ai-2x"
+              style="color: silver; vertical-align: -0em; font-size: 1.6em"
+            ></a>
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Sahl Rowther. All rights reserved.</li>
+          <li>
+            Design: Modified from
+            <a href="http://html5up.net" target="_blank" style="border: 0"
+              >HTML5 UP</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      function copyToClipboard(element) {
+        var $temp = $("<textarea>");
+        $("body").append($temp);
+        var html = $(element).html();
+        html = html.replace(/<br>/g, "\n"); // or \r\n
+        console.log(html);
+        $temp.val(html).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+        CopyClipboardClick();
+        setTimeout(resetButton, 5000);
+      }
+      function CopyClipboardClick() {
+        $("#CopyClipboard").text("Citation successfully copied!");
+      }
+      function resetButton() {
+        var modal = document.getElementById("CopyClipboard");
+        modal.innerHTML =
+          '<i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em; vertical-align: -0.15em;"></i>Copy Citation to Clipboard (BibTeX)';
+      }
+    </script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </body>
+</html>

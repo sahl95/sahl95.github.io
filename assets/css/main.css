@@ -23,6 +23,20 @@
 	}
 }
 
+.tallImage {
+	display: block;
+	max-width: 70%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
+	.tallImage {
+		max-width: 100%;
+	}
+}
+
 /* bangers-regular - latin */
 @font-face {
 	font-family: 'myFont';
@@ -3092,6 +3106,7 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				
 			}
 		
 		.image.fit2 {
