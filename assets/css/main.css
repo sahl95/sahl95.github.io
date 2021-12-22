@@ -13,6 +13,43 @@
 	color: inherit !important;
 }
 
+.conference {
+	display: inline-block;
+	max-width: 62%;
+	margin-bottom: -1em;
+}
+
+@media only screen and (max-width: 600px) {
+	.conference {
+		max-width: 30ch;
+	}
+}
+@media only screen and (max-width: 520px) {
+	.conference {
+		max-width: 23ch;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.conference {
+		max-width: 18ch;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.conference {
+		max-width: 15ch;
+	}
+}
+
+.conferenceType {
+	float: right;
+}
+@media only screen and (max-width: 400px) {
+	.conferenceType {
+		max-width: 11ch;
+		text-align: right;
+	}
+}
+
 .grid {
   width: 100%;
   max-width: 60rem;
