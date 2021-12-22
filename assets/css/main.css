@@ -45,7 +45,6 @@
 }
 @media only screen and (max-width: 400px) {
 	.conferenceType {
-		float: right;
 		max-width: 11ch;
 		text-align: right;
 	}
