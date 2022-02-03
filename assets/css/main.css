@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 .button {
 	background: #8d99ae;
 	color: white;
@@ -25,7 +26,7 @@
 	background: linear-gradient(to bottom, rgba(230, 175, 145, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0)); 
 	transform: rotateZ(60deg) translate(-5em, 200%);  
   }
-  
+
   .button:hover::after, button:focus::after {
 	animation: sheen 1.5s forwards;
   }
