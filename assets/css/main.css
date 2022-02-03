@@ -3633,7 +3633,7 @@ input, select, textarea {
 		}
 
 		.button.tertiary {
-			background-color: #ffec8b;
+			background-color: #b7fac4;
 			box-shadow: none;
 			color: black !important;
 		}
@@ -3648,7 +3648,7 @@ input, select, textarea {
 				background-color: #8a66eb;
 			}
 			.button.tertiary:hover {
-				background-color: #f8db49;
+				background-color: #91FEA6;
 			}
 
 			input[type="submit"].primary:active,
