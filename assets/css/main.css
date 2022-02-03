@@ -7,6 +7,35 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.button {
+	background: #8d99ae;
+	color: white;
+	position: relative;
+	overflow: hidden;
+	 
+  }
+  
+  .button::after {
+	content: '';
+	position: absolute;
+	top: -50%;
+	right: -50%;
+	bottom: -50%;
+	left: -50%;
+	background: linear-gradient(to bottom, rgba(230, 175, 145, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0)); 
+	transform: rotateZ(60deg) translate(-5em, 7.5em);  
+  }
+  
+  .button:hover::after, button:focus::after {
+	animation: sheen 1.5s forwards;
+  }
+  
+  @keyframes sheen {
+	100% {
+	  transform: rotateZ(60deg) translate(1em, -9em);
+	}
+  }
+
 .MathJax {
 	font-size: 1em !important;
 	font-weight: normal !important;
@@ -3604,7 +3633,7 @@ input, select, textarea {
 		}
 
 		.button.tertiary {
-			background-color: #e6e6e6;
+			background-color: #ffec8b;
 			box-shadow: none;
 			color: black !important;
 		}
@@ -3619,7 +3648,7 @@ input, select, textarea {
 				background-color: #8a66eb;
 			}
 			.button.tertiary:hover {
-				background-color: #ffffff;
+				background-color: #f8db49;
 			}
 
 			input[type="submit"].primary:active,
