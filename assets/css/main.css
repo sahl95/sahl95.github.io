@@ -7,6 +7,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.moreInfo_buttons {
+	margin-left: -0.3em;
+	margin-bottom: 0em;
+}
+
+@media (max-width: 480px) {
+	.moreInfo_buttons {
+		margin-left: 0em;
+	}
+}
+
 .summary {
 	background-color: rgba(0, 0, 0, 0.6); 
 	margin: 1em auto;
