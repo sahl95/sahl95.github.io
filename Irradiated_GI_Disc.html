@@ -136,7 +136,7 @@
           <div class="news_video" style="flex: 2;">
 
             <figure>
-              <video style="margin-left: auto; margin-right: auto; max-width: 50rem;" width="100%" height="auto"
+              <video id="transparentVideo" style="margin-left: auto; margin-right: auto; max-width: 50rem;" width="100%" height="auto"
                 autoplay loop muted playsinline controls>
                 <source
                   src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/Irradiated_GI_Disc/RT_vs_betaCooling-hevc-safari.mp4"
@@ -145,6 +145,8 @@
                   src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/Irradiated_GI_Disc/RT_vs_betaCooling-vp9-chrome.webm"
                   type="video/webm">
               </video>
+              <img id="androidImage" src="images/Irradiated_GI_Disc/Md0p1_01274.png" alt="Android Image" style="display: none; margin-left: auto; margin-right: auto; max-width: 50rem;" width="100%" height="auto">
+
               <figcaption style="text-align: left;"><b>Figure 1:</b> A video showing the evolution of gravitational instabilities in a 0.1\(M_\odot\) disc when modelled with live radiative transfer (left panel) and with \(\beta\)-cooling (right panel). Although both discs become gravitationally unstable, the inclusion of stellar irradiation results in weaker spiral structures.
               </figcaption>
             </figure>
@@ -296,6 +298,16 @@
       var modal = document.getElementById("CopyClipboard");
       modal.innerHTML =
         '<i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em; vertical-align: -0.15em;"></i>Copy Citation to Clipboard (BibTeX)';
+    }
+  </script>
+
+  <script>
+    // Detect if the device is Android
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    if (isAndroid) {
+        // Hide the video and show the image
+        document.getElementById('transparentVideo').style.display = 'none';
+        document.getElementById('androidImage').style.display = 'block';
     }
   </script>
 
