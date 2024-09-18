@@ -864,7 +864,7 @@ input, select, textarea {
 
 	html, body {
 		/* background: #1c1d26; */
-		/* background: rgba(27, 29, 48, 0.965); navy blue */
+		/* background: rgba(27, 29, 48, 1); navy blue */
 		/* background: rgba(10, 12, 26, 0.965); */
 		background: #0B0D19;
 	}
@@ -3736,7 +3736,7 @@ input, select, textarea {
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: rgba(27, 29, 48, 0.965);
+				background-color: rgba(27, 29, 48, 1);
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -4166,7 +4166,7 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background: rgba(27, 29, 48, 0.965); /* navy blue */
+		background: rgba(27, 29, 48, 1); /* navy blue */
 		border-radius: 10px;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
@@ -4207,12 +4207,12 @@ input, select, textarea {
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
-				background: rgba(27, 29, 48, 0.965); /* navy blue */
+				background: rgba(27, 29, 48, 1); /* navy blue */
 				content: '';
 				display: block;
 				height: 1em;
 				position: absolute;
-				right: 1.5em;
+				right: 2em;
 				top: -0.5em;
 				width: 1em;
 			}
@@ -4232,8 +4232,8 @@ input, select, textarea {
 		/* background: rgba(24, 26, 48, 0.965);  navy blue */
 		/* background: rgba(47, 50, 92, 0.965); */
 
-		background: rgba(27, 29, 48, 0.965);
-		/* background-image: linear-gradient(rgba(27, 29, 48, 0.965) 20%, #0B0D19); */
+		background: rgba(27, 29, 48, 1);
+		/* background-image: linear-gradient(rgba(27, 29, 48, 1) 20%, #0B0D19); */
 		/* box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25); */
 		cursor: default;
 		height: 3.5em;
@@ -4312,7 +4312,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		/* background-color: #272833; */
-		background-color: rgba(27, 29, 48, 0.965);
+		background-color: rgba(27, 29, 48, 1);
 		background-image: url("../../images/Gallery/IMG_12690HDRv2_IMG_12693HDRv2.jpeg");
 		background-position: center center;
 		background-size: cover;
@@ -4394,10 +4394,10 @@ input, select, textarea {
 
 	#footer {
 		/* background: #272833; */
-		/* background: rgba(27, 29, 48, 0.965);navy blue */
+		/* background: rgba(27, 29, 48, 1);navy blue */
 		/* background: rgba(47, 50, 92, 0.965); */
-		background-image: linear-gradient(#0B0D19, rgba(27, 29, 48, 0.965) 70%);
-		/* background: rgba(27, 29, 48, 0.965); */
+		background-image: linear-gradient(#0B0D19, rgba(27, 29, 48, 1) 70%);
+		/* background: rgba(27, 29, 48, 1); */
 		padding: 6em 0;
 		text-align: center;
 	}
@@ -4757,7 +4757,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background: rgba(27, 29, 48, 0.965);
+				background: rgba(27, 29, 48, 1);
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -4835,7 +4835,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: rgba(27, 29, 48, 0.965);
+				background: rgba(27, 29, 48, 1);
 				padding: 0.75em 1.25em;
 			}
 
