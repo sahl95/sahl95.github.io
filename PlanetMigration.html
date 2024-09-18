@@ -11,13 +11,14 @@
     <meta name="author" content="Sahl Rowther">
     <meta name="theme-color" content="#1B1D30" />
     <meta name="msapplication-navbutton-color" content="#1B1D30">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css"/>
-    <link rel="shortcut icon" type="image/png" href="sahl_logo.png"/>
+    <link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css" />
+    <link rel="shortcut icon" type="image/png" href="sahl_logo.png" />
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <body class="is-preload">
@@ -35,11 +36,21 @@
                     <li><a href="Posters.html">Posters & Talks</a>
                     <li><a href="ResearchInterests.html">Research</a>
                         <ul>
-                            <li><a href="ResearchInterests.html">Overview</a>
-                            <li><a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a></li>
-                            <li><a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in
-                                    Protoplanetary Discs</a></li>
-                                    <li><a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a></li>
+                            <li style="margin-bottom: 0em">
+                                <a href="ResearchInterests.html">Overview</a>
+                            </li>
+                            <li style="margin-bottom: 0em;">
+                                <a href="HidingGI_Warps.html">Gravitational instability in irradiated discs</a>
+                            </li>
+                            <li style="margin-bottom: 0em;">
+                                <a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a>
+                            </li>
+                            <li style="margin-bottom: 0em">
+                                <a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in Protoplanetary Discs</a>
+                            </li>
+                            <li style="margin-bottom: 0em">
+                                <a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -54,31 +65,27 @@
                             Migration in Self-Gravitating Discs: Survival of Planets</a></h2>
                     <p>Sahl Rowther & Farzana Meru</p>
                 </header>
-                <p class='texthover' style="text-align: center;"><i class="fas fa-info-circle" style="margin-right: 1em;"></i>Hover on <a
-                    href=""
-                    ><img
-                      src="images/HoverExample_small.png"
-                      alt=""
-                    /><font color="#C2C2C5"></font>blue text</a> for more information.</p>
-                  <br>
+                <p class='texthover' style="text-align: center;"><i class="fas fa-info-circle" style="margin-right: 1em;"></i>Hover on <a href=""><img src="images/HoverExample_small.png" alt="" />
+                        <font color="#C2C2C5"></font>blue text
+                    </a> for more information.</p>
+                <br>
                 <div class="row gtr-150">
                     <div class="col-12 col-12-medium">
                         <!-- Sidebar -->
                         <section id="sidebar">
                             <section>
-                                <h3>Abstract</h3>
+                                <h3 style="text-align: center;">Abstract</h3>
                                 <p>We carry out three-dimensional SPH simulations to study whether planets can survive in self-gravitating protoplanetary discs. The discs modelled here use a cooling prescription that mimics a real disc which is only gravitationally unstable in the outer regions. We do this by modelling the cooling using a simplified method such that the cooling time in the outer parts of the disc is shorter than in the inner regions, as expected in real discs. We find that both giant ( &gt; M<sub>Sat</sub> ) and low mass ( &lt; M<sub>Nep</sub> ) planets initially migrate inwards very rapidly, but are able to slow down in the inner gravitationally stable regions of the disc without needing to open up a gap. This is in contrast to previous studies where the cooling was modelled in a more simplified manner where regardless of mass, the planets were unable to slow down their inward migration. This shows the important effect the thermodynamics has on planet migration. In a broader context, these results show that planets that form in the early stages of the discs' evolution, when they are still quite massive and self-gravitating, can survive.</p>
-                                <footer>
+                                <footer style="display: flex; justify-content: center;">
                                     <ul class="actions">
-                                        <li><a href="https://academic.oup.com/mnras/article/496/2/1598/5854577"
-                                                target='_blank' style="width: 12em;" class=" button primary"><i class="fas fa-file-pdf fa-lg"></i><span style="margin-left:0.75em"></span>Article PDF</a></li>
-                                        <li>
+                                        <li style="margin-bottom: -0.75em;"><a href="https://academic.oup.com/mnras/article/496/2/1598/5854577" target='_blank' style="width: 12em;" class=" button primary"><i class="fas fa-file-pdf fa-lg"></i><span style="margin-left:0.75em"></span>Article PDF</a></li>
+                                        <li class="moreInfo_buttons">
                                             <button id="myBtn" class="button tertiary " style="width: 12em; font-size: 1em;">Cite</button>
 
                                             <!-- The Modal -->
                                             <div id="myModal" class="modal">
-                                            
-                                            <!-- Modal content -->
+
+                                                <!-- Modal content -->
                                                 <div class="modal-content">
                                                     <span class="close">&times;</span>
                                                     <p id='bib'>@article{10.1093/mnras/staa1590,<br> author = {Rowther, Sahl and Meru, Farzana},<br> title = "{Planet migration in self-gravitating discs: survival of planets}",<br> journal = {Monthly Notices of the Royal Astronomical Society},<br> volume = {496},<br> number = {2},<br> pages = {1598-1609},<br> year = {2020},<br> month = {06},<br> abstract = "{We carry out three-dimensional smoothed particle hydrodynamics simulations to study whether planets can survive in self-gravitating protoplanetary discs. The discs modelled here use a cooling prescription that mimics a real disc, which is only gravitationally unstable in the outer regions. We do this by modelling the cooling using a simplified method such that the cooling time in the outer parts of the disc is shorter than in the inner regions, as expected in real discs. We find that both giant (\\&gt;MSat) and low-mass (\\&lt;MNep) planets initially migrate inwards very rapidly, but are able to slow down in the inner gravitationally stable regions of the disc without needing to open up a gap. This is in contrast to previous studies where the cooling was modelled in a more simplified manner where, regardless of mass, the planets were unable to slow down their inward migration. This shows the important effect the thermodynamics has on planet migration. In a broader context, these results show that planets that form in the early stages of the discs’ evolution, when they are still quite massive and self-gravitating, can survive.}",<br> issn = {0035-8711},<br> doi = {10.1093/mnras/staa1590},<br> url = {https://doi.org/10.1093/mnras/staa1590},<br> eprint = {https://academic.oup.com/mnras/article-pdf/496/2/1598/33483443/staa1590.pdf},<br>}</p>
@@ -115,7 +122,9 @@
                             <!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
                             <p class="texthover"> Past studies which used a constant \(\beta \) found that planets are unable to slow
                                 their rapid inward migration and quickly reach the inner boundary of the disc in a
-                                couple of orbits <a href="http://dx.doi.org/10.1111/j.1365-2966.2011.19172.x" target='_blank'><img src="images/GI_PlanetMigration/Baruteau2011.png" alt=""/><font color="#C2C2C5">(</font>Baruteau et al. 2011<font color="#C2C2C5">)</font></a>. However, using this simple model to cool the disc results in the
+                                couple of orbits <a href="http://dx.doi.org/10.1111/j.1365-2966.2011.19172.x" target='_blank'><img src="images/GI_PlanetMigration/Baruteau2011.png" alt="" />
+                                    <font color="#C2C2C5">(</font>Baruteau et al. 2011<font color="#C2C2C5">)</font>
+                                </a>. However, using this simple model to cool the disc results in the
                                 entire disc being gravitationally unstable (see Fig 1a). Realistic self-gravitating
                                 discs are expected to only be gravitationally unstable in the outer regions. <br><br>
 
@@ -161,12 +170,12 @@
                             <video width="100%" height="100%" loop="true" autoplay="autoplay" controls muted playsinline>
                                 <source src="Videos/GI_PlanetMigration/1JbetaComparison.mp4">
                             </video>
-                            <figcaption style="text-align: left; margin-bottom: 20px;"><b>Figure 2:</b> 
+                            <figcaption style="text-align: left; margin-bottom: 20px;"><b>Figure 2:</b>
                                 A Jupiter mass planet in a constant \(\beta \) disc (a) only stops migrating after reaching the inner edge of the disc. Whereas, with a variable \(\beta \) (b), the planet's migration slows down earlier once it reaches the gravitationally stable inner disc.
                             </figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="col-12 col-12-medium imp-medium">
                         <!-- Content -->
                         <section id="content">
@@ -220,21 +229,19 @@
 
         <!-- Footer -->
         <footer id="footer">
-			<ul class="icons glowalt">
-				<!-- <li><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/sahlrowther" target="_blank"
+            <ul class="icons glowalt">
+                <!-- <li><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/sahlrowther" target="_blank"
 						class="linkwobble pulse icon far fa-address-card" style="color: silver;"><span class="label">Website</span></a></li> -->
-				<li><a href="mailto:sahl.rowther@leicester.ac.uk" class="linkwobble pulse icon solid fa-envelope" style="color: silver;"><span
-							class="label">Email</span></a></li>
-				<li><a href="https://500px.com/sahl_95" target="_blank" class="linkwobble pulse icon brands fa-500px" style="color: silver;"><span
-                            class="label">500px</span></a></li>
+                <li><a href="mailto:sahl.rowther@leicester.ac.uk" class="linkwobble pulse icon solid fa-envelope" style="color: silver;"><span class="label">Email</span></a></li>
+                <li><a href="https://500px.com/sahl_95" target="_blank" class="linkwobble pulse icon brands fa-500px" style="color: silver;"><span class="label">500px</span></a></li>
                 <li><a href="https://arxiv.org/a/rowther_s_1.html" target="_blank" class="linkwobble pulse  ai ai-arxiv ai-2x" style="color: silver; vertical-align: -0.06em;"></a></li>
                 <li><a href="https://orcid.org/0000-0003-4249-4478" target="_blank" class="linkwobble pulse  ai ai-orcid ai-2x" style="color: silver; vertical-align: -0.0em; font-size: 1.6em;"></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Sahl Rowther. All rights reserved.</li>
-				<li>Design: Modified from <a href="http://html5up.net" target="_blank" style="border: 0;">HTML5 UP</a></li>
-			</ul>
-		</footer>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Sahl Rowther. All rights reserved.</li>
+                <li>Design: Modified from <a href="http://html5up.net" target="_blank" style="border: 0;">HTML5 UP</a></li>
+            </ul>
+        </footer>
 
     </div>
 
@@ -242,28 +249,28 @@
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
+
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-        
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-        
+
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-          modal.style.display = "block";
+        btn.onclick = function () {
+            modal.style.display = "block";
         }
-        
+
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
+        span.onclick = function () {
             modal.style.display = "none";
-          }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
     </script>
     <script>
@@ -278,15 +285,15 @@
             $temp.remove();
 
             CopyClipboardClick()
-            setTimeout(resetButton,5000);
-            }
-            function CopyClipboardClick(){ 
-                $("#CopyClipboard").text('Citation successfully copied!');
-            }
-            function resetButton(){ 
-                var modal = document.getElementById("CopyClipboard")
-                modal.innerHTML = '<i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em; vertical-align: -0.15em;"></i>Copy Citation to Clipboard (BibTeX)';
-            }
+            setTimeout(resetButton, 5000);
+        }
+        function CopyClipboardClick() {
+            $("#CopyClipboard").text('Citation successfully copied!');
+        }
+        function resetButton() {
+            var modal = document.getElementById("CopyClipboard")
+            modal.innerHTML = '<i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em; vertical-align: -0.15em;"></i>Copy Citation to Clipboard (BibTeX)';
+        }
     </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
