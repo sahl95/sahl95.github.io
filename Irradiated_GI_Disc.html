@@ -145,7 +145,11 @@
                   src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/Irradiated_GI_Disc/RT_vs_betaCooling-vp9-chrome.webm"
                   type="video/webm">
               </video>
-              <img id="androidImage" src="images/Irradiated_GI_Disc/Md0p1_01274.png" alt="Android Image" style="display: none; margin-left: auto; margin-right: auto; max-width: 50rem;" width="100%" height="auto">
+              <video id="androidVideo" style="display: none; margin-left: auto; margin-right: auto; max-width: 50rem;" width="100%" height="auto"
+              autoplay loop muted playsinline controls>
+              <source
+                src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/Irradiated_GI_Disc/RT_vs_betaCooling_v2.mp4"
+                type='video/mp4;'>
 
               <figcaption style="text-align: left;"><b>Figure 1:</b> A video showing the evolution of gravitational instabilities in a 0.1\(M_\odot\) disc when modelled with live radiative transfer (left panel) and with \(\beta\)-cooling (right panel). Although both discs become gravitationally unstable, the inclusion of stellar irradiation results in weaker spiral structures.
               </figcaption>
@@ -304,10 +308,11 @@
   <script>
     // Detect if the device is Android
     const isAndroid = /Android/i.test(navigator.userAgent);
+    // const isAndroid = /Macintosh|MacIntel|MacPPC|Mac68K/i.test(navigator.userAgent);
     if (isAndroid) {
         // Hide the video and show the image
         document.getElementById('transparentVideo').style.display = 'none';
-        document.getElementById('androidImage').style.display = 'block';
+        document.getElementById('androidVideo').style.display = 'block';
     }
   </script>
 
