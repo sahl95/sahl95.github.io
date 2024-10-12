@@ -118,7 +118,7 @@
 .MathJax {
 	font-size: 1em !important;
 	font-weight: normal !important;
-	color: rgba(255, 255, 255, 0.75) !important;
+	color: rgba(210, 210, 210, 0.77) !important;
 }
 
 .conference {
@@ -3375,7 +3375,7 @@ input, select, textarea {
 
 			figcaption {
 				/* background-color: #222; */
-				color: rgba(255, 255, 255, 0.75);
+				color: rgba(210, 210, 210, 0.77);
 				font: italic smaller sans-serif;
 				padding: 0px;
 				text-align: center;
