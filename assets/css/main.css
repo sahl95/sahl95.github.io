@@ -118,7 +118,7 @@
 .MathJax {
 	font-size: 1em !important;
 	font-weight: normal !important;
-	color: rgba(210, 210, 210, 0.77) !important;
+	color: rgba(210, 210, 210, 0.823) !important;
 }
 
 .conference {
@@ -895,7 +895,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.76);
+		color: rgba(255, 255, 255, 0.823);
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
