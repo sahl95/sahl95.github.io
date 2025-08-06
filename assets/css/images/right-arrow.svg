@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1.5em" viewBox="0 0 18 36" preserveAspectRatio="none">
+    <style type="text/css"><![CDATA[
+        line { stroke: #fff; stroke-width: 1; }
+    ]]></style>
+    <line x1="0" y1="0" x2="18" y2="18" />
+    <line x1="0" y1="36" x2="18" y2="18" />
+</svg>
