@@ -47,6 +47,7 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .buttons button:hover {
@@ -288,7 +289,7 @@
             </div>
 
             <div class="field-selector" role="group" aria-label="Field selector" style="margin-top: 1.5em; margin-bottom: 0.5em;">
-                <span class="triangle" role="button" tabindex="0" aria-label="Previous field" onclick="prevField()" onkeypress="if(event.key==='Enter' || event.key===' ') prevField()">
+                <span class="triangle" role="button" tabindex="0" aria-label="Previous field" onclick="prevField()">
                     <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <polygon points="16,0 0,10 16,20" />
                     </svg>
@@ -296,7 +297,7 @@
 
                 <span id="fieldName" aria-live="polite" aria-atomic="true">Angular Momentum Transfer</span>
 
-                <span class="triangle" role="button" tabindex="0" aria-label="Next field" onclick="nextField()" onkeypress="if(event.key==='Enter' || event.key===' ') nextField()">
+                <span class="triangle" role="button" tabindex="0" aria-label="Next field" onclick="nextField()">
                     <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <polygon points="0,0 16,10 0,20" />
                     </svg>
