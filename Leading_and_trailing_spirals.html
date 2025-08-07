@@ -77,7 +77,7 @@
   .field-selector svg {
     cursor: pointer;
   }
-  .field-selector svg:hover line {
+  .field-selector svg:hover polyline {
   stroke: #FFE55E; /* hover color */
 }
 
@@ -245,24 +245,6 @@
                 <b>Figure 1:</b> The evolution of the surface density a 0.2 Solar mass circumbinary disc. Leading spiral arms are formed when the inner and outer disc are moderately misaligned relative to each other.
               </figcaption>
             </figure>
-
-            <!-- <figure>
-                <video style="display: block;
-                    margin: 0 auto;
-                    border-radius: 50%;
-                    border: 2px solid white;
-                    margin-left: auto; margin-right: auto; 
-                    max-width: 30rem;" autoplay loop muted playsinline>
-                    <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/Md0p2_120fps.mp4">
-                </video>
-                <figcaption style="text-align: left;
-                    width: max-content;
-                    margin: 1em auto;
-                    max-width: 35rem; 
-                    margin-top: 1em"><b>Figure 1:</b> The evolution of the surface density a 0.2 Solar mass circumbinary disc. Leading spiral arms are formed when the inner and outer disc are moderately misaligned relative to each other.
-                </figcaption>
-            </figure> -->
-
           </div>
         </div>
 
@@ -294,26 +276,25 @@
             </div>
             <div class="field-selector" style="margin-top: 1.5em; margin-bottom: 0.5em;">
                 <span onclick="prevField()">
-                    <!-- Left arrow -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1.5em" viewBox="0 0 18 36" preserveAspectRatio="none">
-                    <style type="text/css"><![CDATA[
-                        line { stroke: #fff; stroke-width: 1; }
-                    ]]></style>
-                    <line x1="18" y1="0" x2="0" y2="18" />
-                    <line x1="18" y1="36" x2="0" y2="18" />
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="0.5em" height="1.5em" 
+                        viewBox="0 0 18 36" 
+                        preserveAspectRatio="none">
+                        <polyline points="18,0 0,18 18,36" 
+                                stroke="#fff" 
+                                stroke-width="1" 
+                                fill="none" />
                     </svg>
                 </span>
 
                 <span id="fieldName">Angular Momentum Transfer</span>
 
                 <span onclick="nextField()">
-                    <!-- Right arrow -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1.5em" viewBox="0 0 18 36" preserveAspectRatio="none">
-                    <style type="text/css"><![CDATA[
-                        line { stroke: #fff; stroke-width: 1; }
-                    ]]></style>
-                    <line x1="0" y1="0" x2="18" y2="18" />
-                    <line x1="0" y1="36" x2="18" y2="18" />
+                        <polyline points="0,0 18,18 0,36" 
+                                stroke="#fff" 
+                                stroke-width="1" 
+                                fill="none" />
                     </svg>
                 </span>
             </div>
