@@ -3,164 +3,168 @@
 <html>
 
 <head>
-  <title>Leading & Trailing Spirals in Protoplanetary Discs</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <meta name="keywords" content="Protoplanetary Disc, Misaligned, Warped, Leading, Trailing, Spirals, Protoplanetary Disk, Radiative Transfer, Sahl Rowther" />
-  <meta name="description" content="Research led by Sahl Rowther investigating the evolution of leading and trailing spirals in misaligned circumbinary discs." />
-  <meta name="author" content="Sahl Rowther" />
-  <meta name="theme-color" content="#1B1D30" />
-  <meta name="msapplication-navbutton-color" content="#1B1D30" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30" />
-  <link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css" />
-  <link rel="shortcut icon" type="image/png" href="sahl_logo.png" />
-  <noscript>
-    <link rel="stylesheet" href="assets/css/noscript.css" />
-  </noscript>
+    <title>Leading & Trailing Spirals in Protoplanetary Discs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="keywords" content="Protoplanetary Disc, Misaligned, Warped, Leading, Trailing, Spirals, Protoplanetary Disk, Radiative Transfer, Sahl Rowther" />
+    <meta name="description" content="Research led by Sahl Rowther investigating the evolution of leading and trailing spirals in misaligned circumbinary discs." />
+    <meta name="author" content="Sahl Rowther" />
+    <meta name="theme-color" content="#1B1D30" />
+    <meta name="msapplication-navbutton-color" content="#1B1D30" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30" />
+    <link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css" />
+    <link rel="shortcut icon" type="image/png" href="sahl_logo.png" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <style>
-  li {
-    margin-bottom: 1em;
-  }
-  
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap; /* allow wrapping to next line if needed */
-    justify-content: center;
-    gap: 0.5em; /* space between buttons */
-    margin-bottom: 1em;
-    margin-left: 0.3em;
-    margin-right: auto;
-  }
-
-  .buttons button {
-    background-color: white;
-    font-family: inherit;
-    font-size: inherit;
-    color: black;
-    width: 7em;
-    padding: 0.6em 0.5em;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  @media (hover: hover) {
-    .buttons button:hover {
-        background-color: #b1c2ee;
-        color: black;
-    }
-  }
-
-  .buttons button.active {
-      background: #5480f1;
-      color: white;
+    li {
+        margin-bottom: 1em;
     }
 
-  /* If the screen width is small, stack buttons vertically */
-  @media (max-width: 21em) {
+
     .buttons {
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        /* allow wrapping to next line if needed */
+        justify-content: center;
+        gap: 0.5em;
+        /* space between buttons */
+        margin-bottom: 1em;
+        margin-left: 0.3em;
+        margin-right: auto;
     }
-  }
 
-  .field-selector {
-    display: flex;
-    align-items: center; /* vertical centering */
-    justify-content: center;
-    gap: 1em; /* spacing between arrow and text */
-    margin: 0em 0;
-  }
-
-  .triangle {
-    cursor: pointer;
-    transition: fill 0.3s ease;
-    user-select: none;
-  }
-
-  .triangle polygon {
-    fill: white;
-    transition: fill 0.3s ease;
-  }
-
-  @media (hover: hover) {
-    .triangle:hover polygon {
-        fill: #5480f1;
-        outline: none;
+    .buttons button {
+        background-color: white;
+        font-family: inherit;
+        font-size: inherit;
+        color: black;
+        width: 7em;
+        padding: 0.6em 0.5em;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
-  }
 
-  .field-selector svg {
-    cursor: pointer;
-  }
+    @media (hover: hover) {
+        .buttons button:hover {
+            background-color: #b1c2ee;
+            color: black;
+        }
+    }
 
-  #fieldName {
-    font-family: inherit;
-    transform: translateY(-0.1em);
-    display: inline-block;
-    min-width: 14.5em; /* wide enough for longest label */
-    text-align: center;
-  }
+    .buttons button.active {
+        background: #5480f1;
+        color: white;
+    }
 
+    /* If the screen width is small, stack buttons vertically */
+    @media (max-width: 21em) {
+        .buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .field-selector {
+        display: flex;
+        align-items: center;
+        /* vertical centering */
+        justify-content: center;
+        gap: 1em;
+        /* spacing between arrow and text */
+        margin: 0em 0;
+    }
+
+    .triangle {
+        cursor: pointer;
+        transition: fill 0.3s ease;
+        user-select: none;
+    }
+
+    .triangle polygon {
+        fill: white;
+        transition: fill 0.3s ease;
+    }
+
+    @media (hover: hover) {
+        .triangle:hover polygon {
+            fill: #5480f1;
+            outline: none;
+        }
+    }
+
+    .field-selector svg {
+        cursor: pointer;
+    }
+
+    #fieldName {
+        font-family: inherit;
+        transform: translateY(-0.1em);
+        display: inline-block;
+        min-width: 14.5em;
+        /* wide enough for longest label */
+        text-align: center;
+    }
 </style>
 
 <body class="is-preload">
-  <div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-      <h1 id="logo">
-        <a href="index.html" style="margin-right: 0.5cm" class="linkwobble pulse"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <a href="index.html">Sahl Rowther</a>
-      </h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="CV.html">CV</a></li>
-          <li><a href="Posters.html">Posters & Talks</a></li>
-          <li>
-            <a href="ResearchInterests.html">Research</a>
-            <ul>
-              <li style="margin-bottom: 0em">
-                <a href="ResearchInterests.html">Overview</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="Irradiated_GI_Disc.html">Gravitational Instability in Irradiated Discs</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="Dusty_GI_Disc.html">Dust Dynamics in a Gravitationally Unstable Disc</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a>
-              </li>
-              <li style="margin-bottom: 0em">
-                <a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in Protoplanetary Discs</a>
-              </li>
-              <li style="margin-bottom: 0em">
-                <a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a>
-              </li>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo">
+                <a href="index.html" style="margin-right: 0.5cm" class="linkwobble pulse"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="index.html">Sahl Rowther</a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Posters.html">Posters & Talks</a></li>
+                    <li>
+                        <a href="ResearchInterests.html">Research</a>
+                        <ul>
+                            <li style="margin-bottom: 0em">
+                                <a href="ResearchInterests.html">Overview</a>
+                            </li>
+                            <li style="margin-bottom: 0em;">
+                                <a href="Irradiated_GI_Disc.html">Gravitational Instability in Irradiated Discs</a>
+                            </li>
+                            <li style="margin-bottom: 0em;">
+                                <a href="Dusty_GI_Disc.html">Dust Dynamics in a Gravitationally Unstable Disc</a>
+                            </li>
+                            <li style="margin-bottom: 0em;">
+                                <a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a>
+                            </li>
+                            <li style="margin-bottom: 0em">
+                                <a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in Protoplanetary Discs</a>
+                            </li>
+                            <li style="margin-bottom: 0em">
+                                <a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a>
+                            </li>
 
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <div id="main" class="wrapper style1">
-      <div class="container">
-        <header class="major">
-          <h2 class="headerTitle">
-            <a href="https://arxiv.org/abs/2409.10765" target="_blank">Leading & Trailing Spiral Arms in a Nearly Broken Protoplanetary Disc</a>
-          </h2>
-          <p class="authors">Sahl Rowther, Rebecca Nealon, Richard Alexander, Farzana Meru</p>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <!-- <p class="texthover" style="text-align: center">
+
+        <!-- Main -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2 class="headerTitle">
+                        <a href="https://arxiv.org/abs/2409.10765" target="_blank">Leading & Trailing Spiral Arms in a Nearly Broken Protoplanetary Disc</a>
+                    </h2>
+                    <p class="authors">Sahl Rowther, Rebecca Nealon, Richard Alexander, Farzana Meru</p>
+                </header>
+                <!-- <p class="texthover" style="text-align: center">
             <i class="fas fa-info-circle" style="margin-right: 1em"></i>Hover on
             <a href=""
               ><img src="images/HoverExample_small.png" alt="" /><font
@@ -170,182 +174,177 @@
             >
             for more information.
           </p> -->
-        <br />
+                <br />
 
-        <!-- Sidebar -->
-        <section id="sidebar">
-          <h3 style="text-align: center;">Abstract</h3>
-          <p style="margin-bottom: 1em;">
-            We perform three-dimensional smoothed particle hydrodynamics simulations to investigate the formation of spiral arms in misaligned circumbinary discs. In a nearly broken disc the misaligned inner and outer discs interact at two nodes, launching leading spiral arms that do not rotate with the disc. These spirals vanish when the disc is fully broken or aligned. Our results show that the formation of leading spirals is driven by the relative misalignment of the inner and outer disc, and does not depend on the disc physics.  
-          </p>
-          <p style="margin-bottom: 1em;">
-            With live radiative transfer, the shadows cast by the misaligned inner disc are also able to launch trailing spiral arms that only appear at high misalignments when the discs are disconnected. When the disc is strongly misaligned, leading and trailing spiral arms can both appear and interact with each other. At lower misalignments, the impact of shadows is negligible and leading spiral arms are seen instead. 
-          </p>
-          <p>
-            The presence of both leading and trailing spiral arms implies that the rotation of the disc cannot be assumed based on the orientation of the spiral arms alone. Unlike spirals formed by gravitational instability, the spirals in this work can also form in low-mass, gravitationally stable discs.
-          </p>
-          <footer style="display: flex; justify-content: center;">
-            <ul class="actions">
-              <li style="margin-bottom: -0.75em;">
-                <a href="https://arxiv.org/abs/2409.10765" target="_blank" style="width: 12em" class="button primary">
-                  <i class="fas fa-file-pdf fa-lg"></i>
-                  <span style="margin-left: 0.75em"></span>Article PDF
-                </a>
-              </li>
-              <li class="moreInfo_buttons">
-                <button id="myBtn" class="button tertiary" style="width: 12em; font-size: 1em">
-                  Cite
-                </button>
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="bib">@ARTICLE{2024arXiv240910765R,<br>  author = {{Rowther}, Sahl and {Price}, Daniel J. and {Pinte}, Christophe and {Nealon}, Rebecca and {Meru}, Farzana and {Alexander}, Richard},<br>  title = "{Short-Lived Gravitational Instability in Isolated Irradiated Discs}",<br>  journal = {arXiv e-prints},<br>  keywords = {Astrophysics - Earth and Planetary Astrophysics},<br>  year = 2024,<br>  month = sep,<br>  id = {arXiv:2409.10765},<br>  pages = {arXiv:2409.10765},<br>  archivePrefix = {arXiv},<br>  eprint = {2409.10765},<br>  primaryClass = {astro-ph.EP},<br>  adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240910765R},<br>  adsnote = {Provided by the SAO/NASA Astrophysics Data System}<br>}</p>
-
-                    <p style="text-align: center">
-                      <button onclick="copyToClipboard('#bib')" id="CopyClipboard" class="button tertiary" style="width: 23em; max-width: 100%">
-                        <i class="fas fa-copy" style="
-                              margin-right: 1em;
-                              font-size: 1.5em;
-                              vertical-align: -0.15em;
-                            "></i>Copy Citation to Clipboard (BibTeX)
-                      </button>
+                <!-- Sidebar -->
+                <section id="sidebar">
+                    <h3 style="text-align: center;">Abstract</h3>
+                    <p style="margin-bottom: 1em;">
+                        We perform three-dimensional smoothed particle hydrodynamics simulations to investigate the formation of spiral arms in misaligned circumbinary discs. In a nearly broken disc the misaligned inner and outer discs interact at two nodes, launching leading spiral arms that do not rotate with the disc. These spirals vanish when the disc is fully broken or aligned. Our results show that the formation of leading spirals is driven by the relative misalignment of the inner and outer disc, and does not depend on the disc physics.
                     </p>
-                  </div>
+                    <p style="margin-bottom: 1em;">
+                        With live radiative transfer, the shadows cast by the misaligned inner disc are also able to launch trailing spiral arms that only appear at high misalignments when the discs are disconnected. When the disc is strongly misaligned, leading and trailing spiral arms can both appear and interact with each other. At lower misalignments, the impact of shadows is negligible and leading spiral arms are seen instead.
+                    </p>
+                    <p>
+                        The presence of both leading and trailing spiral arms implies that the rotation of the disc cannot be assumed based on the orientation of the spiral arms alone. Unlike spirals formed by gravitational instability, the spirals in this work can also form in low-mass, gravitationally stable discs.
+                    </p>
+                    <footer style="display: flex; justify-content: center;">
+                        <ul class="actions">
+                            <li style="margin-bottom: -0.75em;">
+                                <a href="https://arxiv.org/abs/2409.10765" target="_blank" style="width: 12em" class="button primary">
+                                    <i class="fas fa-file-pdf fa-lg"></i>
+                                    <span style="margin-left: 0.75em"></span>Article PDF
+                                </a>
+                            </li>
+                            <li class="moreInfo_buttons">
+                                <button id="myBtn" class="button tertiary" style="width: 12em; font-size: 1em">
+                                    Cite
+                                </button>
+
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p id="bib">@ARTICLE{2024arXiv240910765R,<br> author = {{Rowther}, Sahl and {Price}, Daniel J. and {Pinte}, Christophe and {Nealon}, Rebecca and {Meru}, Farzana and {Alexander}, Richard},<br>  title = "{Short-Lived Gravitational Instability in Isolated Irradiated Discs}",<br>  journal = {arXiv e-prints},<br>  keywords = {Astrophysics - Earth and Planetary Astrophysics},<br>  year = 2024,<br>  month = sep,<br>  id = {arXiv:2409.10765},<br>  pages = {arXiv:2409.10765},<br>  archivePrefix = {arXiv},<br>  eprint = {2409.10765},<br>  primaryClass = {astro-ph.EP},<br>  adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240910765R},<br>  adsnote = {Provided by the SAO/NASA Astrophysics Data System}<br>}</p>
+
+                                        <p style="text-align: center">
+                                            <button onclick="copyToClipboard('#bib')" id="CopyClipboard" class="button tertiary" style="width: 23em; max-width: 100%">
+                                                <i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em;  vertical-align: -0.15em; "></i>Copy Citation to Clipboard (BibTeX)
+                                            </button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </footer>
+                </section>
+                <hr />
+
+                <div class="news" style="align-items: center;">
+                    <div class="news_text" style="flex: 2.5; text-align: left; ">
+                        <h3>Disc Evolution</h3>
+
+                        <p>Figure 1 shows the evolution of a 0.2 Solar mass circumbinary disc that is misaligned relative to the binary. The misaligned binary causes the disc to become warped resulting in the formation of leading spiral arms.</p>
+
+                        <ul>
+                            <li>In the early phase of the disc's evolution, the relative disc misalignment of the inner and outer disc is at its highest. The spirals are also at their weakest during this time, and almost disappear as the disc breaks.</li>
+
+                            <li>The relative disc misalignment of the inner and outer disc reduces as the disc realigns. During this intermediate phase, leading spiral structures are at their strongest.</li>
+
+                            <li>The leading spiral arms vanish in the final phase when the disc has realigned, and is no longer warped.</li>
+                        </ul>
+                        <p>These spirals differ from more typical mechanisms for forming spirals such as gravitational instability or planets in two important ways. Firstly, the spirals are pointing in the opposite direction, they are leading instead of trailing. Secondly, they do not rotate with the disc.</p>
+                    </div>
+
+                    <div class="news_video" style="flex: 2;">
+                        <figure>
+                            <video style="display: block;
+                                    margin: 0 auto;
+                                    border-radius: 50%;
+                                    border: 2px solid white;
+                                    margin-left: auto; margin-right: auto; 
+                                    max-width: 30rem;" width="100%" height="auto" autoplay loop muted playsinline>
+                                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/Md0p2_60fps.mp4" />
+                            </video>
+                            <figcaption style="
+                                    text-align: left;
+                                    margin: 1em auto; margin-left: 3%;
+                                    max-width: 35rem;
+                                    width: 95%;
+                                ">
+                                <b>Figure 1:</b> The evolution of the surface density a 0.2 Solar mass circumbinary disc. Leading spiral arms are formed when the inner and outer disc are moderately misaligned relative to each other.
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-              </li>
-            </ul>
-          </footer>
-        </section>
-        <hr />
 
-        <div class="news" style="align-items: center;">
-          <div class="news_text" style="flex: 2.5; text-align: left; ">
-            <h3>Disc Evolution</h3>
+                <hr>
+                <div class="news" style="align-items: center;">
+                    <div class="news_text" style="flex: 2.5; text-align: left; ">
+                        <h3>Why Are There Leading Spirals?</h3>
 
-            <p>Figure 1 shows the evolution of a 0.2 Solar mass circumbinary disc that is misaligned relative to the binary. The misaligned binary causes the disc to become warped resulting in the formation of leading spiral arms.</p>
+                        <p>When the disc is misaligned, the torques are non-zero due to neighbouring annuli of gas having misaligned angular momentum vectors (Lodato & Pringle 2007). The torques result in angular momentum transfer across radii, exciting radial velocities that transport mass radially to redistribute angular momentum.</p>
 
-            <ul>
-                <li>In the early phase of the disc's evolution, the relative disc misalignment of the inner and outer disc is at its highest. The spirals are also at their weakest during this time, and almost disappear as the disc breaks.</li>
+                        <p>
+                            <ul>
+                                <li>At 2 orbits, the relative disc misalignment is large enough to nearly break the disc into two unconnected misaligned discs. Although the misalignment still generates torques, the weak connection between the inner and outer disc results in inefficient angular momentum transfer. Thus, the spirals are also weak in this phase.</li>
 
-                <li>The relative disc misalignment of the inner and outer disc reduces as the disc realigns. During this intermediate phase, leading spiral structures are at their strongest.</li>
+                                <li>At 5 orbits, the disc is warped. The relative misalignment is moderate allowing for the inner and outer disc to remain connected. Angular momentum is efficiently transferred through these two narrow nodes. It is precisely in these regions where the leading and trailing spiral arms originate in the outer and inner disc, respectively. Outward and inward radial velocities are excited at these nodes resulting in the spiral structures seen in the density plots.</li>
 
-                <li>The leading spiral arms vanish in the final phase when the disc has realigned, and is no longer warped.</li>
-            </ul>
-            <p>These spirals differ from more typical mechanisms for forming spirals such as gravitational instability or planets in two important ways. Firstly, the spirals are pointing in the opposite direction, they are leading instead of trailing. Secondly, they do not rotate with the disc.</p>
-          </div>
+                                <li>At 10 orbits, the inner and outer disc have realigned. Hence, the spirals disappear since the torques that drive angular momentum transfer are reduced. Additionally, any angular momentum transfer can now occur at all azimuths since the inner and outer disc are no longer connected at two narrow nodes.</li>
+                            </ul>
+                        </p>
 
+                        <p>A crucial difference from other mechanisms that launch spirals is that the two connecting nodes do not corotate with the disc. The increased radial velocities due to angular momentum transfer from a non-corotating perturbation naturally results in leading spiral arms.</p>
 
-          <div class="news_video" style="flex: 2;">
-            <figure>
-              <video style="display: block;
-                    margin: 0 auto;
-                    border-radius: 50%;
-                    border: 2px solid white;
-                    margin-left: auto; margin-right: auto; 
-                    max-width: 30rem;" width="100%" height="auto" autoplay loop muted playsinline>
-                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/Md0p2_60fps.mp4" />
-              </video>
-              <figcaption style="
-                    text-align: left;
-                    margin: 1em auto; margin-left: 3%;
-                    max-width: 35rem;
-                    width: 95%;
-                  ">
-                <b>Figure 1:</b> The evolution of the surface density a 0.2 Solar mass circumbinary disc. Leading spiral arms are formed when the inner and outer disc are moderately misaligned relative to each other.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+                    </div>
+                    <div class="news_video" style="flex: 2;">
+                        <div class="buttons">
+                            <button onclick="setScenario(0)">Broken</button>
+                            <button onclick="setScenario(1)">Warped</button>
+                            <button onclick="setScenario(2)">Aligned</button>
+                        </div>
 
-        <hr>
-        <div class="news" style="align-items: center;">
-          <div class="news_text" style="flex: 2.5; text-align: left; ">
-            <h3>Why Are There Leading Spirals?</h3>
+                        <div class="field-selector" role="group" aria-label="Field selector" style="margin-top: 1.5em; margin-bottom: 0.5em;">
+                            <span class="triangle" role="button" tabindex="0" aria-label="Previous field" onclick="prevField()">
+                                <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <polygon points="16,0 0,10 16,20" />
+                                </svg>
+                            </span>
 
-            <p>When the disc is misaligned, the torques are non-zero due to neighbouring annuli of gas having misaligned angular momentum vectors (Lodato & Pringle 2007). The torques result in angular momentum transfer across radii, exciting radial velocities that transport mass radially to redistribute angular momentum.</p>
+                            <span id="fieldName" aria-live="polite" aria-atomic="true">Angular Momentum Transfer</span>
 
-            <p>
-                <ul>
-                    <li>At 2 orbits, the relative disc misalignment is large enough to nearly break the disc into two unconnected misaligned discs. Although the misalignment still generates torques, the weak connection between the inner and outer disc results in inefficient angular momentum transfer. Thus, the spirals are also weak in this phase.</li>
+                            <span class="triangle" role="button" tabindex="0" aria-label="Next field" onclick="nextField()">
+                                <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <polygon points="0,0 16,10 0,20" />
+                                </svg>
+                            </span>
+                        </div>
 
-                    <li>At 5 orbits, the disc is warped. The relative misalignment is moderate allowing for the inner and outer disc to remain connected. Angular momentum is efficiently transferred through these two narrow nodes. It is precisely in these regions where the leading and trailing spiral arms originate in the outer and inner disc, respectively. Outward and inward radial velocities are excited at these nodes resulting in the spiral structures seen in the density plots.</li>
+                        <img style="display: block; margin-left: auto; margin-right: auto; max-width: 35rem; " id="displayImage" src="images/LeadingSpirals/Warped_Angular_Momentum.png" alt="Scenario Image">
 
-                    <li>At 10 orbits, the inner and outer disc have realigned. Hence, the spirals disappear since the torques that drive angular momentum transfer are reduced. Additionally, any angular momentum transfer can now occur at all azimuths since the inner and outer disc are no longer connected at two narrow nodes.</li>
-                </ul>
-            </p>
+                        <figcaption style="width: 95%; display: block; margin-left: 4%; margin-right: auto; max-width: 40rem; text-align: left; margin-top: 0.5em;"><b>Figure 2:</b> Particle plots of the density, angular momentum transfer, and radial velocity when the disc is broken, warped, and aligned. The leading spirals form due to the increased radial velocities driven by angular momentum transfer from a non-corotating source. The arrows above can be used to cycle through the density, angular momentum transfer, and radial velocity. The buttons can be used to switch between each scenario.
+                        </figcaption>            
+                    </div>
+                </div>
 
-            <p>A crucial difference from other mechanisms that launch spirals is that the two connecting nodes do not corotate with the disc. The increased radial velocities due to angular momentum transfer from a non-corotating perturbation naturally results in leading spiral arms.</p>
+                <hr>
 
-          </div>
-          <div class="news_video" style="flex: 2;">
-            <div class="buttons">
-                <button onclick="setScenario(0)">Broken</button>
-                <button onclick="setScenario(1)">Warped</button>
-                <button onclick="setScenario(2)">Aligned</button>
-            </div>
+                <div class="news" style="align-items: center;">
+                    <div class="news_text" style="flex: 2.5; text-align: left; ">
+                        <h3>The Impact of Shadows</h3>
+                        <p>Figure 3 shows the evolution of the relative misalignment of the inner and outer disc in a 0.02 Solar mass circumbinary disc. In the top right, the deviations from symmetry is also plotted to improve the visibility of spirals.</p>
 
-            <div class="field-selector" role="group" aria-label="Field selector" style="margin-top: 1.5em; margin-bottom: 0.5em;">
-                <span class="triangle" role="button" tabindex="0" aria-label="Previous field" onclick="prevField()">
-                    <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                    <polygon points="16,0 0,10 16,20" />
-                    </svg>
-                </span>
+                        <ul>
+                            <li>In simulations using live radiative transfer to determine the disc temperatures, there is a second mechanism that can also launch spirals. The shadows cast by the misaligned inner disc onto the outer disc forms trailing spirals.</li>
+                            <li>The trailing spirals due to shadows are only visible at large relative misalignments when the disc is broken. The shadows do not corotate with the disc. Therefore, the trailing spirals do not either.</li>
+                            <li>At lower relative misalignments, the inner and outer disc are connected at two narrow. In this regime, the leading spirals arms are dominant.</li>
+                        </ul>
+                    </div>
 
-                <span id="fieldName" aria-live="polite" aria-atomic="true">Angular Momentum Transfer</span>
+                    <div class="news_video" style="flex: 2;">
 
-                <span class="triangle" role="button" tabindex="0" aria-label="Next field" onclick="nextField()">
-                    <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                    <polygon points="0,0 16,10 0,20" />
-                    </svg>
-                </span>
-            </div>
+                        <figure>
+                        <video id="transparentVideo" style="margin-left: auto; margin-right: auto; max-width: 40rem;" width="100%" height="auto" autoplay loop muted playsinline controls>
+                            <!-- Safari -->
+                            <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment-hevc-safari.mp4" type='video/mp4; codecs="hvc1"'>
+                            <!-- Chromium/VSCode -->
+                            <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment-hevc-safari.mp4" type='video/mp4;'>
+                            <!-- Chrome -->
+                            <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment.webm" type="video/webm">
+                            <!-- Non-transparent fallback -->
+                            <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment_blue.mp4">
+                        </video>
+                        <video id="androidVideo" style="display: none; margin-left: auto; margin-right: auto; max-width: 40rem; margin-bottom: 1em;" width="100%" height="auto" autoplay loop muted playsinline controls>
+                            <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment_blue.mp4">
+                        </video>
+                        <figcaption style="width: 95%; display: block; margin-left: 4%; margin-right: auto; max-width: 40rem; text-align: left;"><b>Figure 3:</b> In a misaligned circumbinary disc modelled with live radiative transfer, leading and trailing spiral arms form cyclically. This is due to two separate mechanisms that launch spirals.
+                        </figcaption>
+                        </figure>
 
-            <img style="display: block; margin-left: auto; margin-right: auto; max-width: 35rem; " id="displayImage" src="images/LeadingSpirals/Warped_Angular_Momentum.png" alt="Scenario Image">
-
-            <figcaption style="width: 95%; display: block; margin-left: 4%; margin-right: auto; max-width: 40rem; text-align: left; margin-top: 0.5em;"><b>Figure 2:</b> Particle plots of the density, angular momentum transfer, and radial velocity when the disc is broken, warped, and aligned. The leading spirals form due to the increased radial velocities driven by angular momentum transfer from a non-corotating source. The arrows above can be used to cycle through the density, angular momentum transfer, and radial velocity. The buttons can be used to switch between each scenario.
-            </figcaption>            
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="news" style="align-items: center;">
-          <div class="news_text" style="flex: 2.5; text-align: left; ">
-            <h3>The Impact of Shadows</h3>
-            <p>Figure 3 shows the evolution of the relative misalignment of the inner and outer disc in a 0.02 Solar mass circumbinary disc. In the top right, the deviations from symmetry is also plotted to improve the visibility of spirals.</p>
-
-            <ul>
-                <li>In simulations using live radiative transfer to determine the disc temperatures, there is a second mechanism that can also launch spirals. The shadows cast by the misaligned inner disc onto the outer disc forms trailing spirals.</li>
-                <li>The trailing spirals due to shadows are only visible at large relative misalignments when the disc is broken. The shadows do not corotate with the disc. Therefore, the trailing spirals do not either.</li>
-                <li>At lower relative misalignments, the inner and outer disc are connected at two narrow. In this regime, the leading spirals arms are dominant.</li>
-            </ul>
-          </div>
-
-          <div class="news_video" style="flex: 2;">
-
-            <figure>
-              <video id="transparentVideo" style="margin-left: auto; margin-right: auto; max-width: 40rem;" width="100%" height="auto" autoplay loop muted playsinline controls>
-                <!-- Safari -->
-                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment-hevc-safari.mp4" type='video/mp4; codecs="hvc1"'>
-                <!-- Chromium/VSCode -->
-                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment-hevc-safari.mp4" type='video/mp4;'>
-                <!-- Chrome -->
-                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment.webm" type="video/webm">
-                <!-- Non-transparent fallback -->
-                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment_blue.mp4">
-              </video>
-              <video id="androidVideo" style="display: none; margin-left: auto; margin-right: auto; max-width: 40rem; margin-bottom: 1em;" width="100%" height="auto" autoplay loop muted playsinline controls>
-                <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/1M_Md0p02_RT_relative_Misalignment_blue.mp4">
-              </video>
-              <figcaption style="width: 95%; display: block; margin-left: 4%; margin-right: auto; max-width: 40rem; text-align: left;"><b>Figure 3:</b> In a misaligned circumbinary disc modelled with live radiative transfer, leading and trailing spiral arms form cyclically. This is due to two separate mechanisms that launch spirals.
-              </figcaption>
-            </figure>
-
-          </div>
-        </div>
+                    </div>
+                </div>
 
       </div>
     </div>
