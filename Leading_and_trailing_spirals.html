@@ -87,9 +87,11 @@
     transition: fill 0.3s ease;
   }
 
-  .triangle:hover polygon {
-    fill: #5480f1;
-    outline: none;
+  @media (hover: hover) {
+    .triangle:hover polygon {
+        fill: #5480f1;
+        outline: none;
+    }
   }
 
   .field-selector svg {
@@ -507,20 +509,6 @@
     // Initial display
     updateImage();
   </script>
-
-  <!-- <script>
-    window.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.triangle').forEach(el => {
-        el.addEventListener('click', () => {
-            el.blur();
-            el.style.pointerEvents = 'none';
-            setTimeout(() => {
-            el.style.pointerEvents = '';
-            }, 100); // 100ms delay to let focus styles reset
-        });
-        });
-    });
-  </script> -->
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
