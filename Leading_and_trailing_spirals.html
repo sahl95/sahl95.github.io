@@ -50,10 +50,12 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  .buttons button:hover {
-      background: #b1c2ee;
-      color: black;
+  @media (hover: hover) {
+    .buttons button:hover {
+        background-color: #b1c2ee;
+        color: black;
     }
+  }
 
   .buttons button.active {
       background: #5480f1;
