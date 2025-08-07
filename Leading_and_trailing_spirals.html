@@ -508,6 +508,16 @@
 
     // Initial display
     updateImage();
+
+    // Preload all scenario + field combinations
+    function preloadAllImages() {
+        scenarios.forEach(scenario => {
+        fieldFileNames.forEach(field => {
+            const img = new Image();
+            img.src = `images/LeadingSpirals/${toFileName(scenario)}_${toFileName(field)}.png`;
+            });
+        });
+    }
   </script>
 
   <script src="assets/js/jquery.min.js"></script>
