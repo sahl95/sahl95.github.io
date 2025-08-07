@@ -74,27 +74,39 @@
     gap: 1em; /* spacing between arrow and text */
     margin: 0em 0;
   }
+
+  .triangle {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    user-select: none;
+  }
+
+  .triangle polygon {
+    fill: white;
+    transition: fill 0.3s ease;
+  }
+
+  .triangle:hover polygon {
+    fill: #5480f1;
+    outline: none;
+  }
+
   .field-selector svg {
     cursor: pointer;
   }
-  .field-selector svg:hover polyline {
-  stroke: #FFE55E; /* hover color */
-}
+
+  .triangle:focus {
+  outline: none;
+  } 
 
   #fieldName {
     font-family: inherit;
-    transform: translateY(-0.225em);
+    transform: translateY(-0.1em);
     display: inline-block;
     min-width: 14.5em; /* wide enough for longest label */
     text-align: center;
   }
 
-    .chevron {
-       color: white;
-      font-size: 1.2rem;
-      cursor: pointer;
-      margin: 0 10px;
-    }
 </style>
 
 <body class="is-preload">
@@ -274,27 +286,19 @@
                 <button onclick="setScenario(1)">Warped</button>
                 <button onclick="setScenario(2)">Aligned</button>
             </div>
-            <div class="field-selector" style="margin-top: 1.5em; margin-bottom: 0.5em;">
-                <span onclick="prevField()">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        width="0.5em" height="1.5em" 
-                        viewBox="0 0 18 36" 
-                        preserveAspectRatio="xMidYMid meet">
-                        <polyline points="18,0 0,18 18,36" 
-                                stroke="#fff" 
-                                stroke-width="1" 
-                                fill="none" />
+
+            <div class="field-selector" role="group" aria-label="Field selector" style="margin-top: 1.5em; margin-bottom: 0.5em;">
+                <span class="triangle" role="button" tabindex="0" aria-label="Previous field" onclick="prevField()" onkeypress="if(event.key==='Enter' || event.key===' ') prevField()">
+                    <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <polygon points="16,0 0,10 16,20" />
                     </svg>
                 </span>
 
-                <span id="fieldName">Angular Momentum Transfer</span>
+                <span id="fieldName" aria-live="polite" aria-atomic="true">Angular Momentum Transfer</span>
 
-                <span onclick="nextField()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1.5em" viewBox="0 0 18 36" preserveAspectRatio="xMidYMid meet">
-                        <polyline points="0,0 18,18 0,36" 
-                                stroke="#fff" 
-                                stroke-width="1" 
-                                fill="none" />
+                <span class="triangle" role="button" tabindex="0" aria-label="Next field" onclick="nextField()" onkeypress="if(event.key==='Enter' || event.key===' ') nextField()">
+                    <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <polygon points="0,0 16,10 0,20" />
                     </svg>
                 </span>
             </div>
