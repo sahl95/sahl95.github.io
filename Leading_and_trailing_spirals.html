@@ -508,13 +508,19 @@
     updateImage();
   </script>
 
-  <script>
+  <!-- <script>
     window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.triangle').forEach(el => {
-        el.addEventListener('click', () => el.blur());
+        document.querySelectorAll('.triangle').forEach(el => {
+        el.addEventListener('click', () => {
+            el.blur();
+            el.style.pointerEvents = 'none';
+            setTimeout(() => {
+            el.style.pointerEvents = '';
+            }, 100); // 100ms delay to let focus styles reset
+        });
+        });
     });
-    });
-  </script>
+  </script> -->
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
