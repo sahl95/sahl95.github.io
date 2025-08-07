@@ -508,6 +508,14 @@
     updateImage();
   </script>
 
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.triangle').forEach(el => {
+        el.addEventListener('click', () => el.blur());
+    });
+    });
+  </script>
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/jquery.dropotron.min.js"></script>
