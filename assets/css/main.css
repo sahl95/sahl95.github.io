@@ -3615,7 +3615,8 @@ input[type="radio"]+label:before {
 figcaption {
 	/* background-color: #222; */
 	color: rgba(210, 210, 210, 0.77);
-	font: italic smaller sans-serif;
+	font: smaller sans-serif;
+	font-family: 'Helvetica';
 	padding: 0px;
 	text-align: center;
 }
