@@ -376,58 +376,74 @@
 	.modal-content {width:83%}
   }
 
-.texthover a img {
-    display: inline;
-    position: absolute;
-	transform: translate(0%, -102%);
-	/* height: 10em; */
-	width: 0;
-	max-width: 40vw;
-	max-height: 50vh;
-	overflow: scroll;
-	opacity: 0;
-    transition: 800ms all;
-}
-.texthover a {
-    display: inline-block;
-    position: relative;
-}
+	/* Hidden image */
+	.texthover a img {
+		position: absolute;
+		transform: translate(0%, -102%);
+		width: 0;
+		max-width: 40vw;
+		max-height: 50vh;
+		opacity: 0;
+		z-index: 999;
+		transition: opacity 1s ease;
+	}
 
-.texthover a:hover img {
-	display: inherit;
-	width: auto;
-	opacity: 1;
-}
-.texthover a:focus img {
-	display: inherit;
-	width: auto;
-	opacity: 1;
-}
+@media (hover: hover) {
+    /* IMAGE HOVER PART */
+    .texthover a {
+        display: inline-block;
+        position: relative;
+    }
 
-.texthover p video {
-    display: none;
-    position: absolute;
-	transform: translate(0%, -102%);
-	width: 0;
-	max-width: 40vw;
-	max-height: 50vh;
-	overflow: scroll;
-	opacity: 0;
-    transition: 800ms all;
-}
-.texthover p {
-    display: inline-block;
-    position: relative;
-}
-.texthover p video {
-    display: inherit;
-	width: auto;
-	opacity: 1;
-}
-.texthover p:hover video {
-    display: inherit;
-	width: auto;
-	opacity: 1;
+    /* Dimming overlay — only when hovering the <a> */
+    .texthover a::before {
+        content: "";
+        position: fixed; /* Covers whole viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0); /* Transparent by default */
+        pointer-events: none; /* Don’t block clicks */
+        transition: background 0.5s ease;
+        z-index: 998;
+    }
+
+    /* Activate dim only when link hovered */
+    .texthover a:hover::before {
+        background: rgba(0,0,0,0.9);
+    }
+
+    
+
+    /* Visible state */
+    .texthover a.hover-left img {
+        transform: translate(0%, -102%);
+    }
+    .texthover a.hover-center img {
+        transform: translate(-50%, -102%);
+    }
+    .texthover a.hover-right img {
+        transform: translate(-100%, -102%);
+    }
+
+    /* If showing below */
+    .texthover a.hover-below-left img {
+        transform: translate(0%, 8%);
+    }
+    .texthover a.hover-below-center img {
+        transform: translate(-50%, 8%);
+    }
+    .texthover a.hover-below-right img {
+        transform: translate(-100%, 8%);
+    }
+
+    /* Show image on hover/focus */
+    .texthover a:hover img,
+    .texthover a:focus img {
+        width: auto;
+        opacity: 1;
+    }
 }
 
 .glow{
