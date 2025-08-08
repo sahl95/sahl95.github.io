@@ -424,7 +424,7 @@
         transform: translate(-50%, -102%);
     }
     .texthover a.hover-right img {
-        transform: translate(-100%, -102%);
+        transform: translate(-70%, -102%);
     }
 
     /* If showing below */
@@ -432,10 +432,10 @@
         transform: translate(0%, 8%);
     }
     .texthover a.hover-below-center img {
-        transform: translate(-50%, 8%);
+        transform: translate(-50%, 5%);
     }
     .texthover a.hover-below-right img {
-        transform: translate(-100%, 8%);
+        transform: translate(-70%, 5%);
     }
 
     /* Show image on hover/focus */
