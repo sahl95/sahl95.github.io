@@ -117,66 +117,18 @@
 <body class="is-preload">
     <div id="page-wrapper">
         <!-- Header -->
-        <header id="header">
-            <h1 id="logo">
-                <a href="index.html" style="margin-right: 0.5cm" class="linkwobble pulse"><i class="fa fa-home" aria-hidden="true"></i></a>
-                <a href="index.html">Sahl Rowther</a>
-            </h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="CV.html">CV</a></li>
-                    <li><a href="Posters.html">Posters & Talks</a></li>
-                    <li>
-                        <a href="ResearchInterests.html">Research</a>
-                        <ul>
-                            <li style="margin-bottom: 0em">
-                                <a href="ResearchInterests.html">Overview</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="Leading_and_trailing_spirals.html">Leading & Trailing Spirals in Protoplanetary Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="Irradiated_GI_Disc.html">Gravitational Instability in Irradiated Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="Dusty_GI_Disc.html">Dust Dynamics in a Gravitationally Unstable Disc</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em">
-                                <a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in Protoplanetary Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em">
-                                <a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div w3-include-html="header.html"></div>
 
         <!-- Main -->
         <div id="main" class="wrapper style1">
             <div class="container">
                 <header class="major">
                     <h2 class="headerTitle">
-                        <a href="https://arxiv.org/abs/2409.10765" target="_blank">Leading & Trailing Spiral Arms in a Nearly Broken Protoplanetary Disc</a>
+                        <a href="https://arxiv.org/abs/2508.04914" target="_blank">Leading & Trailing Spiral Arms in a Nearly Broken Protoplanetary Disc</a>
                     </h2>
                     <p class="authors">Sahl Rowther, Rebecca Nealon, Richard Alexander, Farzana Meru</p>
                 </header>
-                <!-- <p class="texthover" style="text-align: center">
-            <i class="fas fa-info-circle" style="margin-right: 1em"></i>Hover on
-            <a href=""
-              ><img src="images/HoverExample_small.png" alt="" /><font
-                color="#C2C2C5"
-              ></font
-              >blue text</a
-            >
-            for more information.
-          </p> -->
+
                 <br />
 
                 <!-- Sidebar -->
@@ -194,7 +146,7 @@
                     <footer style="display: flex; justify-content: center;">
                         <ul class="actions">
                             <li style="margin-bottom: -0.75em;">
-                                <a href="https://arxiv.org/abs/2409.10765" target="_blank" style="width: 12em" class="button primary">
+                                <a href="https://arxiv.org/abs/2508.04914" target="_blank" style="width: 12em" class="button primary">
                                     <i class="fas fa-file-pdf fa-lg"></i>
                                     <span style="margin-left: 0.75em"></span>Article PDF
                                 </a>
@@ -212,7 +164,7 @@
                                         <p id="bib">@ARTICLE{2024arXiv240910765R,<br> author = {{Rowther}, Sahl and {Price}, Daniel J. and {Pinte}, Christophe and {Nealon}, Rebecca and {Meru}, Farzana and {Alexander}, Richard},<br>  title = "{Short-Lived Gravitational Instability in Isolated Irradiated Discs}",<br>  journal = {arXiv e-prints},<br>  keywords = {Astrophysics - Earth and Planetary Astrophysics},<br>  year = 2024,<br>  month = sep,<br>  id = {arXiv:2409.10765},<br>  pages = {arXiv:2409.10765},<br>  archivePrefix = {arXiv},<br>  eprint = {2409.10765},<br>  primaryClass = {astro-ph.EP},<br>  adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240910765R},<br>  adsnote = {Provided by the SAO/NASA Astrophysics Data System}<br>}</p>
 
                                         <p style="text-align: center">
-                                            <button onclick="copyToClipboard('#bib')" id="CopyClipboard" class="button tertiary" style="width: 23em; max-width: 100%">
+                                            <button onclick="copyToClipboard('#bib')" id="CopyClipboard" class="button white" style="width: 23em; max-width: 100%">
                                                 <i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em;  vertical-align: -0.15em; "></i>Copy Citation to Clipboard (BibTeX)
                                             </button>
                                         </p>
@@ -348,197 +300,39 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
 
-      </div>
+        <!-- Footer -->
+        <div w3-include-html="footer.html"></div>
+
     </div>
 
+    <!-- Scripts -->
 
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons glowalt">
-        <!-- <li>
-            <a
-              href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/sahlrowther"
-              target="_blank"
-              class="linkwobble pulse icon far fa-address-card"
-              style="color: silver"
-              ><span class="label">Website</span></a
-            >
-          </li> -->
-        <li>
-          <a href="mailto:sahl.rowther@leicester.ac.uk" class="linkwobble pulse icon solid fa-envelope" style="color: silver"><span class="label">Email</span></a>
-        </li>
-        <li>
-          <a href="https://500px.com/sahl_95" target="_blank" class="linkwobble pulse icon brands fa-500px" style="color: silver"><span class="label">500px</span></a>
-        </li>
-        <li>
-          <a href="https://arxiv.org/a/rowther_s_1.html" target="_blank" class="linkwobble pulse ai ai-arxiv ai-2x" style="color: silver; vertical-align: -0.06em"></a>
-        </li>
-        <li>
-          <a href="https://orcid.org/0000-0003-4249-4478" target="_blank" class="linkwobble pulse ai ai-orcid ai-2x" style="color: silver; vertical-align: -0em; font-size: 1.6em"></a>
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>&copy; Sahl Rowther. All rights reserved.</li>
-        <li>
-          Design: Modified from
-          <a href="http://html5up.net" target="_blank" style="border: 0">HTML5 UP</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="assets/js/w3.js"></script>
+    <script src="assets/js/transparentVideo_backup.js"></script>
+    <script src="assets/js/copyBibEntry.js"></script>
+    <script src="assets/js/leadingSpirals_ScenarioSwitcher.js"></script>
 
-  <!-- Scripts -->
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
-  <script>
-    function copyToClipboard(element) {
-      var $temp = $("<textarea>");
-      $("body").append($temp);
-      var html = $(element).html();
-      html = html.replace(/<br>/g, "\n"); // or \r\n
-      console.log(html);
-      $temp.val(html).select();
-      document.execCommand("copy");
-      $temp.remove();
-
-      CopyClipboardClick();
-      setTimeout(resetButton, 5000);
-    }
-    function CopyClipboardClick() {
-      $("#CopyClipboard").text("Citation successfully copied!");
-    }
-    function resetButton() {
-      var modal = document.getElementById("CopyClipboard");
-      modal.innerHTML =
-        '<i class="fas fa-copy" style="margin-right: 1em; font-size: 1.5em; vertical-align: -0.15em;"></i>Copy Citation to Clipboard (BibTeX)';
-    }
-  </script>
-
-  <script>
-    // Detect if the device is Android
-    const isAndroid = /Android/i.test(navigator.userAgent);
-    const isFirefox = /Firefox/i.test(navigator.userAgent);
-    // const isAndroid = /Macintosh|MacIntel|MacPPC|Mac68K/i.test(navigator.userAgent);
-    if (isAndroid || isFirefox) {
-      // Hide the video and show the image
-      document.getElementById('transparentVideo').style.display = 'none';
-      document.getElementById('androidVideo').style.display = 'block';
-    }
-  </script>
-
-  <script>
-    const scenarios = ["Broken", "Warped", "Aligned"];
-
-    // Display names for the webpage
-    const fieldDisplayNames = [
-      "Particle Density",
-      "Angular Momentum Transfer",
-      "Positive Radial Velocity",
-      "Negative Radial Velocity"
-    ];
-
-    // Corresponding filenames
-    const fieldFileNames = [
-      "Density",
-      "Angular_Momentum",
-      "Radial_Velocity_positive",
-      "Radial_Velocity_negative"
-    ];
-
-    let currentScenarioIndex = 1; // start at Broken
-    let currentFieldIndex = 1;    // start at Density
-
-    function toFileName(text) {
-      return text;
-    }
-
-    function updateImage() {
-      const scenarioName = scenarios[currentScenarioIndex];
-      const fieldDisplay = fieldDisplayNames[currentFieldIndex];
-      const fieldFile = fieldFileNames[currentFieldIndex];
-
-      document.getElementById("fieldName").innerText = fieldDisplay;
-      document.getElementById("displayImage").src =
-        `images/LeadingSpirals/${toFileName(scenarioName)}_${toFileName(fieldFile)}.png`;
-
-      updateActiveButton();
-    }
-
-    function setScenario(index) {
-      currentScenarioIndex = index;
-      updateImage();
-    }
-
-    function prevField() {
-      currentFieldIndex = (currentFieldIndex - 1 + fieldDisplayNames.length) % fieldDisplayNames.length;
-      updateImage();
-    }
-
-    function nextField() {
-      currentFieldIndex = (currentFieldIndex + 1) % fieldDisplayNames.length;
-      updateImage();
-    }
-
-    function updateActiveButton() {
-      const buttons = document.querySelectorAll(".buttons button");
-      buttons.forEach((btn, i) => {
-        btn.classList.toggle("active", i === currentScenarioIndex);
-      });
-    }
-
-    // Initial display
-    updateImage();
-
-    // Preload all scenario + field combinations
-    function preloadAllImages() {
-        scenarios.forEach(scenario => {
-        fieldFileNames.forEach(field => {
-            const img = new Image();
-            img.src = `images/LeadingSpirals/${toFileName(scenario)}_${toFileName(field)}.png`;
+    <script>
+        w3.includeHTML(function() {
+            // Only run these after the header/nav is loaded
+            $.getScript("assets/js/jquery.scrolly.min.js");
+            $.getScript("assets/js/jquery.dropotron.min.js", function() {
+            // Once Dropotron is loaded, run the main site JS
+            $.getScript("assets/js/main.js");
             });
+            // You can also load other scripts here in order
         });
-    }
-
-    // Call preload function
-    setTimeout(preloadAllImages, 1000);
-  </script>
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    </script>
 </body>
 
 </html>

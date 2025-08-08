@@ -35,46 +35,7 @@
 <body class="is-preload">
   <div id="page-wrapper">
     <!-- Header -->
-    <header id="header">
-      <h1 id="logo">
-        <a href="index.html" style="margin-right: 0.5cm" class="linkwobble pulse"><i class="fa fa-home"
-            aria-hidden="true"></i></a>
-        <a href="index.html">Sahl Rowther</a>
-      </h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="CV.html">CV</a></li>
-          <li><a href="Posters.html">Posters & Talks</a></li>
-          <li>
-            <a href="ResearchInterests.html">Research</a>
-            <ul>
-              <li style="margin-bottom: 0em">
-                <a href="ResearchInterests.html">Overview</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="Leading_and_trailing_spirals.html">Leading & Trailing Spirals in Protoplanetary Discs</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="Irradiated_GI_Disc.html">Gravitational Instability in Irradiated Discs</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="Dusty_GI_Disc.html">Dust Dynamics in a Gravitationally Unstable Disc</a>
-              </li>
-              <li style="margin-bottom: 0em;">
-                <a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a>
-              </li>
-              <li style="margin-bottom: 0em">
-                <a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in Protoplanetary Discs</a>
-              </li>
-              <li style="margin-bottom: 0em">
-                <a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div w3-include-html="header.html"></div>
 
     <div id="main" class="wrapper style1">
       <div class="container">
@@ -167,7 +128,7 @@
             </ul>
           </div>
           <div class="col-6 col-12-medium">
-            <figure class="zoom">
+            <figure>
               <video width="70%" loop="true" autoplay="autoplay" muted playsinline style="
                     display: block;
                     margin: 0 auto;
@@ -227,7 +188,7 @@
             </ul>
           </div>
           <div class="col-6 col-12-medium">
-            <figure class="zoom">
+            <figure>
               <video width="70%" loop="true" autoplay="autoplay" controls muted playsinline
                 style="display: block; margin: 0 auto; border-radius: 3%">
                 <source src="Videos/GI_Warps/WarpedDivV_v2.mp4" />
@@ -269,52 +230,31 @@
     </div>
   </div>
 
-  <footer id="footer">
-    <ul class="icons glowalt">
-      <!-- <li>
-          <a
-            href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/sahlrowther"
-            target="_blank"
-            class="linkwobble pulse icon far fa-address-card"
-            style="color: silver"
-            ><span class="label">Website</span></a
-          >
-        </li> -->
-      <li>
-        <a href="mailto:sahl.rowther@leicester.ac.uk" class="linkwobble pulse icon solid fa-envelope"
-          style="color: silver"><span class="label">Email</span></a>
-      </li>
-      <li>
-        <a href="https://500px.com/sahl_95" target="_blank" class="linkwobble pulse icon brands fa-500px"
-          style="color: silver"><span class="label">500px</span></a>
-      </li>
-      <li>
-        <a href="https://arxiv.org/a/rowther_s_1.html" target="_blank" class="linkwobble pulse ai ai-arxiv ai-2x"
-          style="color: silver; vertical-align: -0.06em"></a>
-      </li>
-      <li>
-        <a href="https://orcid.org/0000-0003-4249-4478" target="_blank" class="linkwobble pulse ai ai-orcid ai-2x"
-          style="color: silver; vertical-align: -0em; font-size: 1.6em"></a>
-      </li>
-    </ul>
-    <ul class="copyright">
-      <li>&copy; Sahl Rowther. All rights reserved.</li>
-      <li>
-        Design: Modified from
-        <a href="http://html5up.net" target="_blank" style="border: 0">HTML5 UP</a>
-      </li>
-    </ul>
-  </footer>
+  <div w3-include-html="footer.html"></div>
+
+  </div>
+
+  <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
   <script src="assets/js/jquery.scrollex.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="assets/js/w3.js"></script>
+
+  <script>
+      w3.includeHTML(function() {
+          // Only run these after the header/nav is loaded
+          $.getScript("assets/js/jquery.scrolly.min.js");
+          $.getScript("assets/js/jquery.dropotron.min.js", function() {
+          // Once Dropotron is loaded, run the main site JS
+          $.getScript("assets/js/main.js");
+          });
+          // You can also load other scripts here in order
+      });
+  
+  </script>
 </body>
 
 </html>

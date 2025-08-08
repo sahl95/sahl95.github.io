@@ -25,43 +25,7 @@
     <div id="page-wrapper">
 
         <!-- Header -->
-        <header id="header">
-            <h1 id="logo">
-                <a href="index.html" style="margin-right: 0.5cm;" class="linkwobble pulse"><i class="fa fa-home" aria-hidden="true"></i></a> <a href="index.html">Sahl Rowther</a>
-            </h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="CV.html">CV</a></li>
-                    <li><a href="Posters.html">Posters & Talks</a>
-                    <li><a href="ResearchInterests.html">Research</a>
-                        <ul>
-                            <li style="margin-bottom: 0em">
-                                <a href="ResearchInterests.html">Overview</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="Leading_and_trailing_spirals.html">Leading & Trailing Spirals in Protoplanetary Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="Irradiated_GI_Disc.html">Gravitational Instability in Irradiated Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="Dusty_GI_Disc.html">Dust Dynamics in a Gravitationally Unstable Disc</a>
-                            </li>
-                            <li style="margin-bottom: 0em;">
-                                <a href="HidingGI_Warps.html">Warping Away Gravitational Instabilities in Protoplanetary Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em">
-                                <a href="HidingGravitationalInstability.html">Hiding Gravitational Instability in Protoplanetary Discs</a>
-                            </li>
-                            <li style="margin-bottom: 0em">
-                                <a href="PlanetMigration.html">Survival of Planets in Self-Gravitating Discs</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div w3-include-html="header.html"></div>
 
         <!-- Main -->
         <div id="main" class="wrapper style1">
@@ -83,6 +47,64 @@
                     <img src="PhantomLogo_transparent_S.gif" style="float: left; margin-right: 1em; width: 25%; height: auto; max-width: 100px;">
 
                     <p style="margin-bottom: 3.5em;">To answer these questions I use 3D SPH simulations (with <a href="https://phantomsph.github.io/">Phantom</a>) to explore the evolution of self-gravitating protoplanetary discs. See below for more information of my recent work.</p>
+
+                    <hr>
+
+                    <div class="news">
+                        <div class="news_text">
+                            <span style="float: left; padding-right: 1em; margin-left: auto; margin-right: auto; font-size: 1.35em;">
+                                5<sup>th</sup> August 2025
+                            </span>
+                            <p style="
+                                    display: inline-block;
+                                    max-width: 100%;
+                                    margin-bottom: -1em;
+                                    margin-right: auto;
+                                    margin-left: auto;
+                                    font-size: 1.35em;
+                                ">
+                                <a href="https://arxiv.org/abs/2508.04914">Leading & Trailing Spiral Arms in a Nearly Broken Protoplanetary Disc</a>
+                            </p>
+                            <br>
+                            <br>
+                            <p style="margin-bottom: 1em;">
+                                We perform three-dimensional smoothed particle hydrodynamics simulations to investigate the formation of spiral arms in misaligned circumbinary discs. In a nearly broken disc the misaligned inner and outer discs interact at two nodes, launching leading spiral arms that do not rotate with the disc. These spirals vanish when the disc is fully broken or aligned. Our results show that the formation of leading spirals is driven by the relative misalignment of the inner and outer disc, and does not depend on the disc physics.
+                            </p>
+                            <p style="margin-bottom: 1em;">
+                                With live radiative transfer, the shadows cast by the misaligned inner disc are also able to launch trailing spiral arms that only appear at high misalignments when the discs are disconnected. When the disc is strongly misaligned, leading and trailing spiral arms can both appear and interact with each other. At lower misalignments, the impact of shadows is negligible and leading spiral arms are seen instead.
+                            </p>
+                            <p>
+                                The presence of both leading and trailing spiral arms implies that the rotation of the disc cannot be assumed based on the orientation of the spiral arms alone. Unlike spirals formed by gravitational instability, the spirals in this work can also form in low-mass, gravitationally stable discs.
+                            </p>
+                        </div>
+                        <div class="news_video">
+                            <div class="grid image-grid">
+                                <div class="grid-block">
+                                    <div class="tile">
+                                        <video width="100%" loop="true" autoplay="autoplay" muted playsinline class="tile-img tile-img3" style="
+                                            display: block;
+                                            margin: 0 auto;
+                                            border-radius: 50%;
+                                            border: 2px solid white;
+                                        ">
+                                            <source src="https://raw.githubusercontent.com/sahl95/Simulation_Videos/main/LeadingSpirals/Md0p2_60fps.mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-12-medium">
+                        <ul class="actions">
+                            <li style="margin-bottom: 0em; margin-left: auto; margin-right: auto; margin-top: 1em;">
+                                <a href="Leading_and_trailing_spirals.html" target="_blank" style="width: auto; padding: 0 3em;" class="
+                                button
+                                secondary
+                              ">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
 
                     <hr>
 
@@ -118,16 +140,14 @@
                             <div class="grid image-grid">
                                 <div class="grid-block">
                                     <div class="tile">
-                                        <a class="tile-link" href="https://sahl95.github.io/Videos/Irradiated_GI_Disc/Md0p1_RT.mp4">
-                                            <video width="100%" loop="true" autoplay="autoplay" muted playsinline class="tile-img tile-img3" style="
-                                                display: block;
-                                                margin: 0 auto;
-                                                border-radius: 50%;
-                                                border: 2px solid white;
-                                            ">
-                                                <source src="Videos/Irradiated_GI_Disc/Md0p1_RT.mp4" />
-                                            </video>
-                                        </a>
+                                        <video width="100%" loop="true" autoplay="autoplay" muted playsinline class="tile-img tile-img3" style="
+                                            display: block;
+                                            margin: 0 auto;
+                                            border-radius: 50%;
+                                            border: 2px solid white;
+                                        ">
+                                            <source src="Videos/Irradiated_GI_Disc/Md0p1_RT.mp4" />
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -176,16 +196,14 @@
                             <div class="grid image-grid">
                                 <div class="grid-block">
                                     <div class="tile">
-                                        <a class="tile-link" href="https://sahl95.github.io/ResearchThumbnailGifs/b15dust_50fps.mp4">
-                                            <video width="100%" loop="true" autoplay="autoplay" muted playsinline class="tile-img tile-img3" style="
-                                                display: block;
-                                                margin: 0 auto;
-                                                border-radius: 50%;
-                                                border: 2px solid white;
-                                            ">
-                                                <source src="ResearchThumbnailGifs/b15dust_50fps.mp4" />
-                                            </video>
-                                        </a>
+                                        <video width="100%" loop="true" autoplay="autoplay" muted playsinline class="tile-img tile-img3" style="
+                                            display: block;
+                                            margin: 0 auto;
+                                            border-radius: 50%;
+                                            border: 2px solid white;
+                                        ">
+                                            <source src="ResearchThumbnailGifs/b15dust_50fps.mp4" />
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -230,9 +248,7 @@
                             <div class="grid image-grid">
                                 <div class="grid-block">
                                     <div class="tile">
-                                        <a class="tile-link" href="https://sahl95.github.io/ResearchThumbnailGifs/3Jb5500_20fps_v1.gif">
-                                            <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/3Jb5500_20fps_v1.gif" alt="Image">
-                                        </a>
+                                        <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/3Jb5500_20fps_v1.gif" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -261,9 +277,7 @@
                             <div class="grid image-grid">
                                 <div class="grid-block">
                                     <div class="tile">
-                                        <a class="tile-link" href="https://sahl95.github.io/ResearchThumbnailGifs/WarpedDisc_Pres_Rotation_trim.gif">
-                                            <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/WarpedDisc_Pres_Rotation_trim.gif" alt="Image">
-                                        </a>
+                                        <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/WarpedDisc_Pres_Rotation_trim.gif" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -305,9 +319,7 @@
                             <div class="grid image-grid">
                                 <div class="grid-block">
                                     <div class="tile">
-                                        <a class="tile-link" href="https://sahl95.github.io/ResearchThumbnailGifs/3Jb5500_20fps_v1.gif">
-                                            <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/3Jb5500_20fps_v1.gif" alt="Image">
-                                        </a>
+                                        <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/3Jb5500_20fps_v1.gif" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -347,9 +359,7 @@
                             <div class="grid image-grid">
                                 <div class="grid-block">
                                     <div class="tile">
-                                        <a class="tile-link" href="https://sahl95.github.io/ResearchThumbnailGifs/1Jb5500.gif">
-                                            <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/1Jb5500.gif" alt="Image">
-                                        </a>
+                                        <img loading="lazy" class="tile-img tile-img3" style="border-radius: 50%; border: 2px solid white;" src="ResearchThumbnailGifs/1Jb5500.gif" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -368,33 +378,33 @@
                 </section>
             </div>
         </div>
+
         <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons glowalt">
-                <!-- <li><a href="https://warwick.ac.uk/fac/sci/physics/research/astro/people/sahlrowther" target="_blank"
-						class="linkwobble pulse icon far fa-address-card" style="color: silver;"><span class="label">Website</span></a></li> -->
-                <li><a href="mailto:sahl.rowther@leicester.ac.uk" class="linkwobble pulse icon solid fa-envelope" style="color: silver;"><span class="label">Email</span></a></li>
-                <li><a href="https://500px.com/sahl_95" target="_blank" class="linkwobble pulse icon brands fa-500px" style="color: silver;"><span class="label">500px</span></a></li>
-                <li><a href="https://arxiv.org/a/rowther_s_1.html" target="_blank" class="linkwobble pulse  ai ai-arxiv ai-2x" style="color: silver; vertical-align: -0.06em;"></a></li>
-                <li><a href="https://orcid.org/0000-0003-4249-4478" target="_blank" class="linkwobble pulse  ai ai-orcid ai-2x" style="color: silver; vertical-align: -0.0em; font-size: 1.6em;"></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Sahl Rowther. All rights reserved.</li>
-                <li>Design: Modified from <a href="http://html5up.net" target="_blank" style="border: 0;">HTML5 UP</a></li>
-            </ul>
-        </footer>
+        <div w3-include-html="footer.html"></div>
 
     </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="assets/js/w3.js"></script>
+
+    <script>
+        w3.includeHTML(function() {
+            // Only run these after the header/nav is loaded
+            $.getScript("assets/js/jquery.scrolly.min.js");
+            $.getScript("assets/js/jquery.dropotron.min.js", function() {
+            // Once Dropotron is loaded, run the main site JS
+            $.getScript("assets/js/main.js");
+            });
+            // You can also load other scripts here in order
+        });
+    
+    </script>
 
 </body>
 
