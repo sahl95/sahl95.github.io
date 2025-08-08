@@ -286,24 +286,40 @@
 
 	<script>
 		w3.includeHTML(function() {
-			const currentFile = window.location.pathname.split('/').pop();
-			if (currentFile === '' || currentFile === 'index.html') {
-				// Remove the <a href="index.html"> text inside logo
-				const logoLink = document.querySelector('#logo a[href="index.html"]');
-				if (logoLink) logoLink.textContent = ''; // or logoLink.remove();
-				// Remove Home link if it exists in nav
-				const homeLink = document.querySelector('#nav a[href="index.html"]');
-				if (homeLink) homeLink.parentElement.remove();
-				// If there are other index-only removals, do them here
+			// Normalize the current path to detect homepage
+			const path = window.location.pathname;
+			// Consider '/' or '/index.html' as homepage
+			const isHome = (path === '/' || path.endsWith('/index.html'));
+
+			if (isHome) {
+			console.log("Homepage detected — adjusting header/nav...");
+
+			// Find the logo link to index.html
+			const logoLink = document.querySelector('#logo a[href="index.html"]');
+			if (logoLink) {
+				// Instead of removing text content, hide it gently
+				// This preserves the element if JS depends on it
+				logoLink.style.visibility = 'hidden';
+				logoLink.style.pointerEvents = 'none';
 			}
+
+			// Remove Home link in nav if present
+			const homeLink = document.querySelector('#nav a[href="index.html"]');
+			if (homeLink && homeLink.parentElement) {
+				homeLink.parentElement.remove();
+			}
+			} else {
+			console.log("Not homepage, no header/nav changes made.");
+			}
+
 			// Load scripts after HTML modifications are done
 			$.getScript("assets/js/jquery.scrolly.min.js");
 			$.getScript("assets/js/jquery.dropotron.min.js", function() {
-				// Once Dropotron is loaded, run the main site JS
-				$.getScript("assets/js/main.js");
+			$.getScript("assets/js/main.js");
 			});
 		});
 	</script>
+
 
 </body>
 
