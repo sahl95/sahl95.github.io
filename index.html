@@ -317,36 +317,39 @@
 		w3.includeHTML();
 	</script>
 
-	<script>function adjustBannerHeight() {
-		const banner = document.getElementById('banner');
-		if (!banner) return;
+	<script>
+		function adjustBannerHeight() {
+			const banner = document.getElementById('banner');
+			if (!banner) return;
 
-		// Remove max-height temporarily to get natural height
-		banner.style.maxHeight = 'none';
-
-		const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
-		const maxAllowedHeight = window.innerHeight - headerHeight;
-
-		// Set maxHeight temporarily for measuring clientHeight with restriction
-		banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-
-		// Calculate overflow amount
-		const overflowAmount = banner.scrollHeight - banner.clientHeight;
-
-		if (overflowAmount >= 50) {
-			// Big overflow: remove max-height and allow full height
+			// Remove max-height temporarily to get natural height
 			banner.style.maxHeight = 'none';
-			banner.style.overflow = 'visible';
-		} else {
-			// Minor/no overflow: keep max-height and hide overflow
+
+			const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
+			const maxAllowedHeight = window.innerHeight - headerHeight;
+
+			// Set maxHeight temporarily for measuring clientHeight with restriction
 			banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
-			banner.style.overflow = 'hidden';
-		}
+
+			// Calculate overflow amount & ratio
+			const overflowAmount = banner.scrollHeight - banner.clientHeight;
+			const overflowRatio = overflowAmount / banner.clientHeight; // e.g., 0.2 = 20%
+
+			if (overflowRatio >= 0.2) {
+				// Big overflow: remove max-height and allow full height
+				banner.style.maxHeight = 'none';
+				banner.style.overflow = 'visible';
+			} else {
+				// Minor/no overflow: keep max-height and hide overflow
+				banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+				banner.style.overflow = 'hidden';
+			}
 		}
 
 		window.addEventListener('load', adjustBannerHeight);
 		window.addEventListener('resize', adjustBannerHeight);
 	</script>
+
 </body>
 
 </html>
