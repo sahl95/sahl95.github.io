@@ -29,6 +29,9 @@
 		<!-- Header -->
 		<header id="header">
 			<h1 id="logo">
+				<a href="#page-wrapper" style="align-items: center;" class="scrolly">
+					<i class="fa fa-home" aria-hidden="true" style="margin-right: 1em;"></i>
+				</a>
 			</h1>
 			<nav id="nav">
 				<ul>
@@ -97,7 +100,7 @@
 					</div>
 
 					<footer class="major">
-						<a href="#banner" style="border: 0; bottom: 4em;" class="pulse goto-prev scrolly"><img alt="">Prev</a>
+						<a href="#page-wrapper" style="border: 0; bottom: 4em;" class="pulse goto-prev scrolly"><img alt="">Prev</a>
 						<a href="#photos" style="border: 0;" class="pulse goto-next scrolly"><img alt="">Next</a>
 					</footer>
 				</div>
@@ -229,7 +232,7 @@
 						</ul>
 					</div>
 					<footer class="major">
-						<a href="#banner" style="border: 0; height: 4em;" class="pulse goto-prev scrolly"><img alt="">Prev
+						<a href="#page-wrapper" style="border: 0; height: 4em;" class="pulse goto-prev scrolly"><img alt="">Prev
 						</a>
 					</footer>
 					<script>
@@ -314,7 +317,36 @@
 		w3.includeHTML();
 	</script>
 
+	<script>function adjustBannerHeight() {
+		const banner = document.getElementById('banner');
+		if (!banner) return;
 
+		// Remove max-height temporarily to get natural height
+		banner.style.maxHeight = 'none';
+
+		const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
+		const maxAllowedHeight = window.innerHeight - headerHeight;
+
+		// Set maxHeight temporarily for measuring clientHeight with restriction
+		banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+
+		// Calculate overflow amount
+		const overflowAmount = banner.scrollHeight - banner.clientHeight;
+
+		if (overflowAmount >= 50) {
+			// Big overflow: remove max-height and allow full height
+			banner.style.maxHeight = 'none';
+			banner.style.overflow = 'visible';
+		} else {
+			// Minor/no overflow: keep max-height and hide overflow
+			banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+			banner.style.overflow = 'hidden';
+		}
+		}
+
+		window.addEventListener('load', adjustBannerHeight);
+		window.addEventListener('resize', adjustBannerHeight);
+	</script>
 </body>
 
 </html>
