@@ -322,32 +322,44 @@
 			const banner = document.getElementById('banner');
 			if (!banner) return;
 
-			// Remove max-height temporarily to get natural height
-			banner.style.maxHeight = 'none';
-
 			const headerHeight = document.querySelector('#header')?.offsetHeight || 0;
-			const maxAllowedHeight = window.innerHeight - headerHeight;
+			const viewportHeight = window.innerHeight; // Actual visible height
+			const maxAllowedHeight = viewportHeight - headerHeight;
 
-			// Set maxHeight temporarily for measuring clientHeight with restriction
-			banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+			banner.style.maxHeight = 'none';
+			const overflowAmount = banner.scrollHeight - maxAllowedHeight;
 
-			// Calculate overflow amount & ratio
-			const overflowAmount = banner.scrollHeight - banner.clientHeight;
-			const overflowRatio = overflowAmount / banner.clientHeight; // e.g., 0.2 = 20%
-
-			if (overflowRatio >= 0.2) {
-				// Big overflow: remove max-height and allow full height
+			if (overflowAmount >= maxAllowedHeight * 0.2) {
 				banner.style.maxHeight = 'none';
 				banner.style.overflow = 'visible';
 			} else {
-				// Minor/no overflow: keep max-height and hide overflow
-				banner.style.maxHeight = `calc(100vh - ${headerHeight}px)`;
+				banner.style.maxHeight = maxAllowedHeight + 'px';
 				banner.style.overflow = 'hidden';
 			}
 		}
 
+		// Throttled scroll listener — only triggers when viewport height changes
+		let lastHeight = window.innerHeight;
+		let scrollTimeout;
+
+		function checkHeightChange() {
+			if (window.innerHeight !== lastHeight) {
+				lastHeight = window.innerHeight;
+				adjustBannerHeight();
+			}
+		}
+
+		function onScrollThrottled() {
+			if (scrollTimeout) return;
+			scrollTimeout = setTimeout(() => {
+				checkHeightChange();
+				scrollTimeout = null;
+			}, 100); // Adjust throttle delay if needed
+		}
+
 		window.addEventListener('load', adjustBannerHeight);
 		window.addEventListener('resize', adjustBannerHeight);
+		window.addEventListener('scroll', onScrollThrottled, { passive: true });
 	</script>
 
 </body>
