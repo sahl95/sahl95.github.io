@@ -1,5 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;600;700&display=swap");
+
 
 /*
 	Landed by HTML5 UP
@@ -132,7 +134,7 @@ button:focus::after {
 .MathJax {
 	font-size: 1em !important;
 	font-weight: normal !important;
-	color: rgba(210, 210, 210, 0.823) !important;
+	color: rgba(210, 210, 210, 0.85) !important;
 }
 
 .conference {
@@ -1017,6 +1019,11 @@ video {
 	vertical-align: baseline;
 }
 
+h3 {
+	font-family: 'Roboto Slab', 'Roboto', 'Helvetica'; 
+	font-weight: 100;
+}
+
 article,
 aside,
 details,
@@ -1118,10 +1125,10 @@ body,
 input,
 select,
 textarea {
-	color: rgba(255, 255, 255, 0.823);
+	color: rgba(255, 255, 255, 0.75);
 	font-family: "Roboto", Helvetica, sans-serif;
 	font-size: 15pt;
-	font-weight: 100;
+	font-weight: 300;
 	line-height: 1.75em;
 }
 
@@ -3613,9 +3620,10 @@ input[type="radio"]+label:before {
 
 figcaption {
 	/* background-color: #222; */
-	color: rgba(210, 210, 210, 0.77);
+	color: rgba(210, 210, 210, 0.9);
 	font: smaller sans-serif;
-	font-family: 'Helvetica';
+	font-family: 'Roboto', 'Helvetica';
+	font-weight: 300;
 	padding: 0px;
 	text-align: center;
 }
