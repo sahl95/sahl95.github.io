@@ -326,40 +326,23 @@
 			const viewportHeight = window.innerHeight; // Actual visible height
 			const maxAllowedHeight = viewportHeight - headerHeight;
 
+			// Temporarily remove restriction to measure
 			banner.style.maxHeight = 'none';
 			const overflowAmount = banner.scrollHeight - maxAllowedHeight;
 
 			if (overflowAmount >= maxAllowedHeight * 0.2) {
+				// Big overflow: allow full height
 				banner.style.maxHeight = 'none';
 				banner.style.overflow = 'visible';
 			} else {
+				// Keep limit
 				banner.style.maxHeight = maxAllowedHeight + 'px';
 				banner.style.overflow = 'hidden';
 			}
 		}
 
-		// Throttled scroll listener — only triggers when viewport height changes
-		let lastHeight = window.innerHeight;
-		let scrollTimeout;
-
-		function checkHeightChange() {
-			if (window.innerHeight !== lastHeight) {
-				lastHeight = window.innerHeight;
-				adjustBannerHeight();
-			}
-		}
-
-		function onScrollThrottled() {
-			if (scrollTimeout) return;
-			scrollTimeout = setTimeout(() => {
-				checkHeightChange();
-				scrollTimeout = null;
-			}, 100); // Adjust throttle delay if needed
-		}
-
 		window.addEventListener('load', adjustBannerHeight);
 		window.addEventListener('resize', adjustBannerHeight);
-		window.addEventListener('scroll', onScrollThrottled, { passive: true });
 	</script>
 
 </body>
