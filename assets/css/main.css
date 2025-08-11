@@ -55,7 +55,7 @@
 }
 
 .news_text {
-	flex: 4;
+	flex: 3.5;
 	/* Column 1 is 1.5 times wider */
 	text-align: left;
 	/* Left-align the content */
