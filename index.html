@@ -15,6 +15,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/researchSlide.css" />
 	<link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css" />
 	<link rel="shortcut icon" type="image/png" href="sahl_logo.png" />
 
@@ -97,7 +98,7 @@
 		</section>
 
 		<!-- AboutMe -->
-		<section id="AboutMe" class="wrapper style1 special hero">
+		<!-- <section id="AboutMe" class="wrapper style1 special hero">
 			<div class="content">
 				<div class="container">
 					<header class="major">
@@ -118,8 +119,77 @@
 					</footer>
 				</div>
 			</div>
+		</section> -->
 
+		<section id="AboutMe" class="wrapper style1 special hero">
+			<div class="content">
+				<div class="container">
+					<header class="major">
+							<h2 style="font-family: 'Roboto Slab'; font-weight: 200;">About Me</h2>
+						</header>
+					<div class="news">
+                        <div class="news_text">                
+                            <br>
+                            <p style="text-align:left; line-height: 2em; color: rgba(255, 255, 255, 0.75);">I am a Research Associate in the Astronomy and Astrophysics group at the University of Warwick working with Dr. Farzana Meru. Previously, I was a research associate at Physics and Astronomy group at the University of Leicester working with Prof. Richard Alexander. I was previously a PhD student in the Astronomy and Astrophysics group at the University of Warwick under the supervision of Dr. Farzana Meru.</p>
+							<p>My research explores the evolution of planet-forming discs during the earliest phase of its life when they are massive and self-gravitating. I perform 3D SPH simulations to connect theory with observations by investigating how warps, planet-disc interactions, the star-forming environment, and self-gravity impact the morphology of the disc. I am also interested these processes impact dust dynamics, and thus planet-formation.
+							</p>
+                        </div>
+                        <div class="research_img">
+                            <div style="border: 2px solid #779bea; border-radius: 50%;" class="slideshow">
+								<div class="slide active">
+									<div class="label">Gravitational Instability</div>
+									<div class="circle">
+									<img src="images/Irradiated_GI_Disc/Md0p25_fragmented_v2.png">
+									<svg class="timer" viewBox="0 0 100 100">
+										<circle class="progress" cx="50" cy="50" r="49.5"/>
+									</svg>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="label">Warped Discs</div>
+									<div class="circle">
+									<img src="images/HidingGI_Warps/Warp.png">
+									<svg class="timer" viewBox="0 0 100 100">
+										<circle class="progress" cx="50" cy="50" r="49.5"/>
+									</svg>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="label">Planet-Disc Interactions</div>
+									<div class="circle">
+									<img src="images/HidingGravitationalInstability/3Jb5500_00400_HR.png">
+									<svg class="timer" viewBox="0 0 100 100">
+										<circle class="progress" cx="50" cy="50" r="49.5"/>
+									</svg>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="label">Dust Dynamics</div>
+									<div class="circle">
+									<img src="images/Dusty_GI_Disc/DustDisc.jpeg">
+									<svg class="timer" viewBox="0 0 100 100">
+										<circle class="progress" cx="50" cy="50" r="49.5"/>
+									</svg>
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					<div style="text-align:center; margin-top: 2.5em;">
+						<ul class="actions special">
+							<li><a href="ResearchInterests.html" class="button primary" style="width: auto; padding: 0 3em;">My Research</a></li>
+						</ul>
+						<br>
+					</div>
+
+					<footer class="major">
+						<a href="#page-wrapper" style="border: 0; bottom: 4em;" class="pulse goto-prev scrolly"><img alt="">Prev</a>
+						<a href="#photos" style="border: 0;" class="pulse goto-next scrolly"><img alt="">Next</a>
+					</footer>
+				</div>
+			</div>
 		</section>
+		
 		<hr style="margin-top: 0px;">
 		<section id="photos" class="wrapper style1 special hero">
 			<div class="content">
@@ -323,6 +393,17 @@
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		const slides = document.querySelectorAll('.slide');
+		let index = 0;
+
+		setInterval(()=>{
+		slides[index].classList.remove('active');
+		index = (index+1)%slides.length;
+		slides[index].classList.add('active');
+		},5500);
+	</script>
 	
 
 	<script>
