@@ -47,7 +47,7 @@
 
 .progress{
   fill:none;
-  stroke:#5480f1;
+  stroke:#779bea;
   stroke-width:1.1;
   stroke-dasharray:311.02;
   stroke-dashoffset:311.02;
@@ -69,7 +69,7 @@
   color: white;
   padding: 0.5em 0.875em;
   border-radius: 1.125em;
-  border: 1px solid #5480f1;
+  border: 1px solid #779bea;
 
   font-size: 1.1rem;
   width: 10em;
