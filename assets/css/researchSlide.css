@@ -45,16 +45,16 @@
   width: 100%;
   height: 100%;
   transform:rotate(-90deg) translateZ(0);
-  transform-origin:50% 50%;
+  transform-origin: 50% 50%;
   z-index: 3;
 }
 
 .progress {
   fill: none;
   stroke: #779bea;
-  stroke-width: 1.3;
-  stroke-dasharray: 314.16;
-  stroke-dashoffset: 314.16;
+  stroke-width: 1.15;
+  stroke-dasharray: 311.02;
+  stroke-dashoffset: 311.02;
 }
 
 .slide.active .progress {
@@ -93,7 +93,7 @@
 
 @keyframes countdown {
   from {
-    stroke-dashoffset: 314.16;
+    stroke-dashoffset: 311.02;
   }
 
   to {
