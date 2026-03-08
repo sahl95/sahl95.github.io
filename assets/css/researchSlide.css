@@ -44,15 +44,14 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  transform:rotate(-90deg) translateZ(0);
-  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
   z-index: 3;
 }
 
 .progress {
   fill: none;
   stroke: #779bea;
-  stroke-width: 1.15;
+  stroke-width: 1.1;
   stroke-dasharray: 311.02;
   stroke-dashoffset: 311.02;
 }
