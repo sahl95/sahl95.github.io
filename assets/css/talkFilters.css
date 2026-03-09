@@ -21,7 +21,7 @@
 }
 
 .talkFilters .filter:not(.merged-button):hover {
-  background-color: #779bea;
+  background-color: #172242;
   border-color: #779bea;
 }
 
@@ -60,7 +60,7 @@
 
 /* hover effect for subfilters */
 .talkFilters .merged-button .subfilter:hover {
-  background-color: #779bea;
+  background-color: #172242;
 }
 
 /* active subfilter */
