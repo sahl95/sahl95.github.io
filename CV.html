@@ -12,6 +12,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#1B1D30">
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/talkFilters.css" />
   <link rel="stylesheet" href="academicons-1.9.1//css/academicons.min.css" />
   <link rel="shortcut icon" type="image/png" href="sahl_logo.png" />
 
@@ -260,20 +261,34 @@
               </span>
             </li>
           </ul>
+
           <h3>Conferences & Seminars</h3>
-          <ul class="alt">
-            <li>
+          <div class="talkFilters">
+            <span class="filter active" data-filter="all">All</span>
+
+            <!-- merged talk button -->
+            <span class="filter merged-button">
+              <span class="subfilter" data-filter="talk">Talks</span>
+              <span class="subfilter" data-filter="contributed">Contributed</span>
+              <span class="subfilter" data-filter="invited">Invited</span>
+            </span>
+
+            <span class="filter" data-filter="poster">Posters</span>
+            <span class="filter" data-filter="recent">Last 4 years</span>
+          </div>
+          <ul class="alt" id="talkList">
+            <li data-type="talk invited" data-year="2026">
               <span style="float: left; min-width: 10ch;">
                 Mar 2026
               </span>
               <p class="conference">
-                <b>University of Central Lancasire</b>, Preston, UK
+                <b>University of Central Lancashire</b>, Preston, UK
               </p>
               <span class="conferenceType" style="float: right;">
                 (<i>Invited Talk</i>)
               </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2026">
               <span style="float: left; min-width: 10ch;">
                 Feb 2026
               </span>
@@ -284,7 +299,7 @@
                 (<i>Invited Talk</i>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2025">
               <span style="float: left; min-width: 10ch;">
                 Sep 2025
               </span>
@@ -295,7 +310,7 @@
                 (<i>Contributed Talk</i>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2025">
               <span style="float: left; min-width: 10ch;">
                 Jun 2025
               </span>
@@ -306,7 +321,7 @@
                 (<a href="https://www.youtube.com/watch?v=2PWYftAan7Y"><i>Contributed Talk</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2025">
               <span style="float: left; min-width: 10ch;">
                 Apr 2025
               </span>
@@ -317,7 +332,7 @@
                 (<i>Contributed Talk</i>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2024">
               <span style="float: left; min-width: 10ch;">
                 Sep 2024
               </span>
@@ -328,7 +343,7 @@
                 (<i>Contributed Talk</i>)
               </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2024">
               <span style="float: left; min-width: 10ch;">
                 Jul 2024
               </span>
@@ -339,7 +354,7 @@
                 (&#127942; <a href="Posters.html#DB2024"><i>Poster</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2024">
               <span style="float: left; min-width: 10ch;">
                 Jul 2024
               </span>
@@ -350,7 +365,7 @@
                 (<i>Contributed Talk</i>)
               </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2024">
               <span style="float: left; min-width: 10ch;">
                 Feb 2024
               </span>
@@ -360,9 +375,8 @@
               <span class="conferenceType" style="float: right;">
                 (<a href="https://phantomsph.github.io/workshop2024/slides/Rowther-lowres.pdf"><i>Invited Talk</i></a>)
               </span>
-
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2023">
               <span style="float: left; min-width: 10ch;">
                 Jun 2023
               </span>
@@ -372,9 +386,8 @@
               <span class="conferenceType" style="float: right;">
                 (<i>Contributed Talk</i>)
               </span>
-
             </li>
-            <li>
+            <li data-type="poster" data-year="2023">
               <span style="float: left; min-width: 10ch;">
                 Apr 2023
               </span>
@@ -384,9 +397,8 @@
               <span class="conferenceType" style="float: right;">
                 (<i>Poster</i>)
               </span>
-
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2023">
               <span style="float: left; min-width: 10ch;">
                 Feb 2023
               </span>
@@ -396,9 +408,8 @@
               <span class="conferenceType" style="float: right;">
                 (<a href="https://youtu.be/ag3onZ7SG8c"><i>Invited Talk</i></a>)
               </span>
-
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Sep 2022
               </span>
@@ -409,7 +420,7 @@
                 (<a href="Posters.html#EPSC2022"><i>Contributed Talk</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Sep 2022
               </span>
@@ -418,7 +429,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Contributed talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Aug 2022
               </span>
@@ -427,7 +438,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Invited talk</i>) </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Aug 2022
               </span>
@@ -438,7 +449,7 @@
                 (<a href="Posters.html#ERES2022"><i>Poster</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Jul 2022
               </span>
@@ -447,7 +458,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Contributed talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Jun 2022
               </span>
@@ -456,7 +467,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Contributed talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Apr 2022
               </span>
@@ -465,7 +476,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Contributed talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Mar 2022
               </span>
@@ -474,7 +485,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Invited talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2022">
               <span style="float: left; min-width: 10ch;">
                 Jan 2022
               </span>
@@ -483,7 +494,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Contributed talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Dec 2021
               </span>
@@ -492,7 +503,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Invited talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Nov 2021
               </span>
@@ -501,7 +512,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Invited talk</i>) </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Nov 2021
               </span>
@@ -510,7 +521,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Invited talk</i>) </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Oct 2021
               </span>
@@ -521,7 +532,7 @@
                 (<a href="Posters.html#CtD2021"><i>Poster</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Jun 2021
               </span>
@@ -532,7 +543,7 @@
                 (<i>Poster</i>)
               </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 May 2021
               </span>
@@ -543,7 +554,7 @@
                 (<a href="Posters.html#DAD2021"><i>Poster</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 May 2021
               </span>
@@ -555,7 +566,7 @@
                 (<a href="Posters.html#DDA2021"><i>Contributed Talk</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Apr 2021
               </span>
@@ -566,7 +577,7 @@
                 (<a href="Posters.html#UKEXOM2021"><i>Contributed Talk</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2021">
               <span style="float: left; min-width: 10ch;">
                 Mar 2021
               </span>
@@ -577,7 +588,7 @@
                 (<i>Poster</i>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2020">
               <span style="float: left; min-width: 10ch;">
                 Dec 2020
               </span>
@@ -588,7 +599,7 @@
                 (<a href="Posters.html#HLTau"><i>Contributed Talk</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk invited" data-year="2020">
               <span style="float: left; min-width: 10ch;">
                 Nov 2020
               </span>
@@ -597,7 +608,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Invited talk</i>) </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2020">
               <span style="float: left; min-width: 10ch;">
                 Jul 2020
               </span>
@@ -608,7 +619,7 @@
                 (<a href="Posters.html#ExoplanetsIII"><i>Poster</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2020">
               <span style="float: left; min-width: 10ch;">
                 Jun 2020
               </span>
@@ -619,7 +630,7 @@
                 (<a href="Posters.html#EAS2020"><i>Poster</i></a>)
               </span>
             </li>
-            <li>
+            <li data-type="talk contributed" data-year="2020">
               <span style="float: left; min-width: 10ch;">
                 Dec 2019
               </span>
@@ -637,7 +648,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Attended</i>) </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2019">
               <span style="float: left; min-width: 10ch;">
                 Jul 2019
               </span>
@@ -647,7 +658,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Poster</i>) </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2019">
               <span style="float: left; min-width: 10ch;">
                 Apr 2019
               </span>
@@ -656,7 +667,7 @@
               </p>
               <span class="conferenceType" style="float: right;"> (<i>Poster</i>) </span>
             </li>
-            <li>
+            <li data-type="poster" data-year="2019">
               <span style="float: left; min-width: 10ch;">
                 Feb 2019
               </span>
@@ -717,6 +728,8 @@
         });
     
     </script>
+
+   <script src="assets/js/conferenceFilter.js"></script>
 </body>
 
 </html>
