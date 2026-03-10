@@ -26,10 +26,13 @@ window.onclick = function (event) {
 function copyToClipboard(element) {
     var $temp = $("<textarea>");
     $("body").append($temp);
-    var html = $(element).html();
-    html = html.replace(/<br>/g, "\n"); // or \r\n
-    console.log(html);
-    $temp.val(html).select();
+
+    var text = $(element).text();
+
+    // remove indentation spaces/tabs at start of each line
+    text = text.replace(/^[ \t]+/gm, '');
+
+    $temp.val(text).select();
     document.execCommand("copy");
     $temp.remove();
 
