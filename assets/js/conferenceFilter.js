@@ -8,11 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
   let last4YearsActive = false; // last 4 years toggle
 
   function filterItems() {
-    const currentYear = new Date().getFullYear();
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth() + 1;
 
     items.forEach(item => {
       const types = (item.dataset.type || "").split(" ");
       const year = parseInt(item.dataset.year) || 0;
+      const month = parseInt(item.dataset.month) || 0;
 
       let show = true;
 
@@ -22,8 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       // last 4 years filtering (additive)
-      if(last4YearsActive) {
-        show = show && year >= currentYear - 4;
+      // if(last4YearsActive) {
+      //   show = show && year >= currentYear - 4;
+      // }
+      if (last4YearsActive) {
+        show = show && (
+          year > currentYear - 4 ||
+          (year === currentYear - 4 && month >= currentMonth)
+        );
       }
 
       item.style.display = show ? "" : "none";
