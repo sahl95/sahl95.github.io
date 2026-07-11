@@ -78,3 +78,8 @@
   padding-top: 0;
 }
 
+.talkFilters .filter[data-filter="recent"].active:hover {
+  background-color: #6b91f5;
+  border-color: #6b91f5;
+}
+
