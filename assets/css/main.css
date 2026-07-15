@@ -837,7 +837,10 @@ src: url('../../Fonts/bangers-v13-latin/bangers-v13-latin-regular.eot'); /* IE9 
 	/* Rounded border */
 	padding: 1px;
 	/* Some padding */
-	width: 50%;
+	/* width: 50%; */
+	max-height: 60vh;
+	width: auto;
+	max-width: 85%;
 	/* Set a small width */
 	box-shadow: 0 0 1px 1px #5480f1;
 }
@@ -846,6 +849,12 @@ src: url('../../Fonts/bangers-v13-latin/bangers-v13-latin-regular.eot'); /* IE9 
 .posterimage:hover {
 	box-shadow: 0 0 10px 1px #FFE55E;
 }
+
+/* @media screen and (max-width: 520px) {
+	.posterimage {
+		width: 75%;
+	}
+} */
 
 .mySlides {
 	display: none;
