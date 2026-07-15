@@ -18,6 +18,48 @@
   margin-bottom: 2em;
 }
 
+.award-list {
+  margin: 0;
+  padding-left: 1.5rem; /* keeps normal bullet indentation */
+}
+
+.award-item {
+  margin-bottom: 1.2rem;
+}
+
+.award-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  width: 100%;
+}
+
+.award-title {
+  flex: 1;
+}
+
+.award-year {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.award-details {
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 520px) {
+  .award-details {
+    max-width: 80%;
+  }
+
+  .award-year {
+    width: 20%;
+    text-align: right;
+  }
+}
+
 /* CV list items */
 .cv-item {
   display: flex;
